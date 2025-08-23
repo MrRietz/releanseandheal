@@ -12,17 +12,24 @@
         href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
         rel="stylesheet"
     >
-    <link
         rel="stylesheet"
         href="/style.css"
+    >
+    <link
+        rel="stylesheet"
+        href="{{ site.baseurl }}/style.css"
     >
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo"><a href="/"><img
                         src="/public/img/Logga-3.png"
+                        alt="Release & Heal logga"
+                        style="max-height:200px; border-radius:12px; vertical-align:middle;"
+                    ></a></div>
+            <div class="logo"><a href="{{ site.baseurl }}/"><img
+                        src="{{ site.baseurl }}/public/img/Logga-3.png"
                         alt="Release & Heal logga"
                         style="max-height:200px; border-radius:12px; vertical-align:middle;"
                     ></a></div>
@@ -62,19 +69,19 @@
             </button>
             <ul class="nav-links">
                 <li><a
-                        href="/"
+                        href="{{ site.baseurl }}/"
                         class="nav-link"
                     >Hem</a></li>
                 <li><a
-                        href="/om-mig/"
+                        href="{{ site.baseurl }}/om-mig/"
                         class="nav-link"
                     >Om mig</a></li>
                 <li><a
-                        href="/tjanster/"
+                        href="{{ site.baseurl }}/tjanster/"
                         class="nav-link"
                     >Tjänster</a></li>
                 <li><a
-                        href="/bokning/"
+                        href="{{ site.baseurl }}/bokning/"
                         class="nav-link"
                     >Boka tid</a></li>
             </ul>
@@ -87,7 +94,7 @@
             <p>{{ site.description }}</p>
             {% if page.url != '/bokning/' and page.url != '/bokning/index.html' %}
             <a
-                href="/bokning/"
+                href="{{ site.baseurl }}/bokning/"
                 class="cta"
             >Boka tid</a>
             {% endif %}
