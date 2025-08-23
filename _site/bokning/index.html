@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Boka tid | Release & Heal</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+        rel="stylesheet"
+    >
+    <link
+        rel="stylesheet"
+        href="/style.css"
+    >
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="/"><img
+                        src="/public/img/Logga-3.png"
+                        alt="Release & Heal logga"
+                        style="max-height:200px; border-radius:12px; vertical-align:middle;"
+                    ></a></div>
+            <button
+                class="nav-toggle"
+                aria-label="Öppna meny"
+                onclick="document.querySelector('.nav-links').classList.toggle('open')"
+            >
+                <svg
+                    class="nav-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    width="38"
+                    height="38"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                >
+                    <path
+                        d="M20 7L4 7"
+                        stroke="#7c5c3e"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                    ></path>
+                    <path
+                        d="M20 12L4 12"
+                        stroke="#7c5c3e"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                    ></path>
+                    <path
+                        d="M20 17L4 17"
+                        stroke="#7c5c3e"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                    ></path>
+                </svg>
+            </button>
+            <ul class="nav-links">
+                <li><a
+                        href="/"
+                        class="nav-link"
+                    >Hem</a></li>
+                <li><a
+                        href="/om-mig/"
+                        class="nav-link"
+                    >Om mig</a></li>
+                <li><a
+                        href="/tjanster/"
+                        class="nav-link"
+                    >Tjänster</a></li>
+                <li><a
+                        href="/bokning/"
+                        class="nav-link"
+                    >Boka tid</a></li>
+            </ul>
+        </nav>
+        <div
+            class="hero"
+            id="home"
+        >
+            <h1>Boka tid</h1>
+            <p>Välkommen till Release & Heal – din plats för healing, vägledning och personlig utveckling.</p>
+            
+        </div>
+    </header>
+    <main>
+        <h1 id="boka-tid">Boka tid</h1>
+
+<p style="text-align:center; font-size:1.1em; margin-bottom:1em; color:#7c5c3e;">Fyll i formuläret nedan för att boka tid eller kontakta mig.</p>
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="max-width:400px;margin:0 auto 2em auto;display:flex;flex-direction:column;gap:16px;">
+  <input type="text" name="Namn" placeholder="Namn" required="" style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;" />
+  <input type="email" name="E-post" placeholder="E-post" required="" style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;" />
+  <textarea name="Meddelande" placeholder="Meddelande" required="" style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;min-height:100px;"></textarea>
+  <button type="submit" class="cta" style="width:100%;font-size:1.1em;">Skicka bokningsförfrågan</button>
+</form>
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Release & Heal. Alla rättigheter förbehållna.</p>
+    </footer>
+    <script>
+        // Markera aktiv meny
+        const links = document.querySelectorAll('.nav-link');
+        const path = window.location.pathname.replace(/\/$/, '');
+        links.forEach(link => {
+            const href = link.getAttribute('href').replace(/\/$/, '');
+            if (href === path || (href === '/' && path === '/')) {
+                link.classList.add('selected');
+            } else {
+                link.classList.remove('selected');
+            }
+        });
+    </script>
+</body>
+
+</html>

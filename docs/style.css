@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+}
+header {
+  background: linear-gradient(120deg, #b2d8d8 0%, #e6e6fa 100%);
+  padding-bottom: 40px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2e8b8b;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+nav ul li a:hover {
+  color: #2e8b8b;
+}
+.hero {
+  text-align: center;
+  padding: 80px 20px 40px 20px;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2e8b8b;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.cta {
+  background: #2e8b8b;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background 0.2s;
+}
+.cta:hover {
+  background: #1c5c5c;
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  margin-top: -40px;
+}
+section {
+  margin-bottom: 50px;
+}
+section h2 {
+  color: #2e8b8b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.services-list {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.service {
+  background: #e6e6fa;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1 1 220px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+}
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #b2d8d8;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+button {
+  background: #2e8b8b;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #1c5c5c;
+}
+footer {
+  text-align: center;
+  padding: 30px 0;
+  background: #b2d8d8;
+  color: #333;
+  margin-top: 40px;
+  border-radius: 0 0 12px 12px;
+}
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .services-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  main {
+    margin-top: 0;
+  }
+}

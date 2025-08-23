@@ -1,0 +1,8 @@
+title: Release & Heal
+email: din@email.se
+description: >-
+  Välkommen till Release & Heal – din plats för healing, vägledning och personlig utveckling.
+baseurl: "" # för GitHub Pages
+url: "https://MrRietz.github.io/releanseandheal"
+theme: minima
+lang: sv
