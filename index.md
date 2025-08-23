@@ -11,7 +11,7 @@ title: Release & Heal
 
 ## Välkommen till Release & Heal
 
-Så fint att du hittat hit! Jag som driver Release & Heal heter Elisabeth Rietz. Här erbjuds du:
+Så fint att du hittat hit! Jag som driver Release & Heal heter Elisabeth Rietz och jag är coach, terapeut, healer & medium. Här erbjuds du:
 
 <ul style="margin: 1em 0 2em 0; padding-left: 1.2em; color: #7c5c3e; font-size: 1.1em; line-height: 2.2em;">
   <li>Hypnoterapi</li>
@@ -89,3 +89,4 @@ setInterval(function() {
 ---
 
 > "Släpp taget om det gamla och ge plats för det nya. Release & Heal hjälper dig på din resa!"
+
