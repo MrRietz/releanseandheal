@@ -7,7 +7,7 @@ permalink: /om-mig/
 # Om mig
 
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:32px;margin-bottom:2em;">
-  <img src="/public/img/elisabeth.jpg" alt="Elisabeth Rietz" style="max-width:220px;border-radius:16px;box-shadow:0 2px 12px rgba(78,52,46,0.09);">
+  <img src="{{ site.baseurl }}/public/img/elisabeth.jpg" alt="Elisabeth Rietz" style="max-width:220px;border-radius:16px;box-shadow:0 2px 12px rgba(78,52,46,0.09);">
   <div style="flex:1;min-width:220px;">
     <p><strong>Jag heter Elisabeth Rietz</strong> och har en passion för självutveckling och mötet med människor. Min egen inre resa började efter utmattningssyndrom och har lett till ett liv där jag följer hjärtat och intuitionen. Jag har arbetat med människor hela mitt yrkesliv – som lärare, forskare och terapeut.</p>
     <p>Jag är certifierad Emotion Code Practitioner, diplomerad Reiki Master, holistisk återhämtningsterapeut och utbildar mig till medium. Min kärna är healing och samtal, och jag erbjuder även medial vägledning och privat sittningar.</p>
