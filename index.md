@@ -29,7 +29,7 @@ Så fint att du hittat hit! Jag som driver Release & Heal heter Elisabeth Rietz.
 
 Jag ser holistiskt på människan och hälsan. Allt hänger samman – det mentala, fysiska, emotionella och andliga. Du får stöd och vägledning med metoder som hjälper dig med stress, utmattning, självkänsla, medberoende och ohjälpsamma mönster. Vill du kan du även få medial vägledning för att hitta din livsväg och lära känna dig själv på djupet.
 
-Jag skräddarsyr hjälpen efter dina behov och arbetar främst online, men kan även erbjuda sessioner i Lund.
+Jag skräddarsyr hjälpen efter dina behov och arbetar främst online, men kan även erbjuda sessioner i Veberöd.
 
 Min drivkraft är att vara en katalysator för transformation – att hjälpa dig finna kärleken till dig själv och växa som människa.
 

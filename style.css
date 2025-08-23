@@ -59,11 +59,15 @@ nav {
   box-shadow: 0 1px 4px rgba(78, 52, 46, 0.07);
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
   display: inline-block;
+  min-width: 140px;
+  text-align: center;
 }
 .nav-link.selected {
   background: #7c5c3e;
   color: #fff;
   box-shadow: 0 2px 8px rgba(78, 52, 46, 0.12);
+  min-width: 140px;
+  text-align: center;
 }
 .nav-link:hover {
   background: #7c5c3e;
@@ -73,7 +77,48 @@ nav {
 .nav-toggle {
   display: none;
 }
-@media (max-width: 700px) {
+@media (max-width: 900px), (max-width: 1200px) and (orientation: landscape) {
+  table.tjanster-table tr {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 24px rgba(78, 52, 46, 0.13);
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+  table.tjanster-table tbody {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  table.tjanster-table tr {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(78, 52, 46, 0.07);
+    padding: 12px;
+    margin-bottom: 8px;
+  }
+  table.tjanster-table td {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1em;
+    border-radius: 0;
+    background: none;
+    text-align: left;
+    border: none;
+  }
+  table.tjanster-table td:before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #7c5c3e;
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0.98em;
+  }
   nav {
     flex-direction: column;
     gap: 15px;
@@ -96,7 +141,7 @@ nav {
     max-height: 280px;
   }
   .nav-toggle {
-    display: block;
+    display: flex;
     position: absolute;
     right: 24px;
     top: 24px;
@@ -106,20 +151,40 @@ nav {
     color: #7c5c3e;
     z-index: 10;
     cursor: pointer;
+    border-radius: 0;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .nav-links {
     flex-direction: column;
     gap: 10px;
     align-items: center;
-    background: #fff;
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(78, 52, 46, 0.07);
     padding: 16px 0;
-    position: absolute;
+    position: fixed;
     top: 70px;
     right: 0;
-    min-width: 180px;
+    left: 0;
+    min-width: unset;
+    width: 100vw;
     display: none;
+    z-index: 99;
+  }
+  .nav-link {
+    width: calc(100vw - 32px);
+    max-width: 500px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto 8px auto;
+    border-radius: 12px;
+    display: block;
   }
   .nav-links.open {
     display: flex !important;
@@ -167,6 +232,7 @@ button[type="submit"]:hover {
   box-shadow: 0 2px 8px rgba(78, 52, 46, 0.12);
 }
 main {
+  width: 100%;
   max-width: 950px;
   margin: 0 auto;
   padding: 48px 24px;
@@ -174,7 +240,9 @@ main {
   border-radius: 18px;
   box-shadow: 0 2px 24px rgba(78, 52, 46, 0.07);
   margin-top: -40px;
+  box-sizing: border-box;
 }
+
 section {
   margin-bottom: 50px;
 }
@@ -195,6 +263,8 @@ section h2 {
   flex: 1 1 220px;
   box-shadow: 0 2px 12px rgba(78, 52, 46, 0.07);
   margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 form {
   display: flex;
@@ -238,12 +308,14 @@ footer {
 }
 .carousel-container {
   position: relative;
+  width: 100%;
   max-width: 500px;
   margin: 40px auto;
   background: #fff;
   border-radius: 18px;
   box-shadow: 0 2px 24px rgba(78, 52, 46, 0.09);
   padding: 28px;
+  box-sizing: border-box;
 }
 .carousel {
   position: relative;
