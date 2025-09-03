@@ -2,7 +2,8 @@ title: Release & Heal
 email: din@email.se
 description: >-
   Välkommen till Release & Heal – din plats för healing, vägledning och personlig utveckling.
-baseurl: "/releanseandheal" # för GitHub Pages
-url: "https://MrRietz.github.io/releanseandheal"
+baseurl: "" # no subpath for custom domain
+url: "https://skanskavagor.se" # set to your custom domain
 theme: minima
 lang: sv
+
