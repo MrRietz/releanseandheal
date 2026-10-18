@@ -11,7 +11,7 @@ page_id: about
   <img src="{{ site.baseurl }}/public/img/elisabeth.jpg" alt="Elisabeth Rietz" data-text-key="about.label.002" data-text-attr="alt" style="max-width:220px;border-radius:16px;box-shadow:0 2px 12px rgba(78,52,46,0.09);">
   <div style="flex:1;min-width:220px;">
     <p data-text-key="about.paragraph.001">Jag heter Elisabeth Rietz och har en passion för självutveckling och mötet med människor. Min egen inre resa började efter utmattningssyndrom och har lett till ett liv där jag följer hjärtat och intuitionen. Jag har arbetat med människor hela mitt yrkesliv – som lärare, forskare och terapeut.</p>
-    <p data-text-key="about.paragraph.002">Jag är certifierad Emotion Code Practitioner, diplomerad Reiki Master, holistisk återhämtningsterapeut och utbildar mig till medium. Min kärna är healing och samtal, och jag erbjuder även medial vägledning och privat sittningar.</p>
+    <p data-text-key="about.paragraph.002">Jag är certifierad Emotion Code Practitioner, diplomerad Reiki Master, holistisk återhämtningsterapeut och utbildad medium. Min kärna är healing och samtal, och jag erbjuder även medial vägledning och privat sittningar.</p>
     <p data-text-key="about.paragraph.003">Min passion är att hjälpa dig leva mjukare och hitta din inre styrka. Tillsammans arbetar vi med både kropp, själ och tanke för att skapa förändring och läkning.</p>
   </div>
 </div>

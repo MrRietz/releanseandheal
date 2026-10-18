@@ -93,6 +93,16 @@
         >
             <h1 data-text-key="{{ page.page_id | default: 'home' }}.label.001">{{ page.title }}</h1>
             <p data-text-key="global.paragraph.001">{{ site.description }}</p>
+            <section
+                class="offer-banner"
+                data-offer
+                hidden
+            >
+                <h2 data-text-key="home.offer.001">Mässerbjudande</h2>
+                <p data-text-key="home.offer.002"><strong>20% rabatt</strong> på valfri session med hypnos, NLP-coachning eller Emotionskoden.</p>
+                <p data-text-key="home.offer.003"><strong>10% rabatt</strong> på övriga tjänster.</p>
+                <p data-text-key="home.offer.005"><em>Gäller 30 oktober – 30 november.</em></p>
+            </section>
             {% if page.url != '/bokning/' and page.url != '/bokning/index.html' %}
             <a
                 href="{{ site.baseurl }}/bokning/"
@@ -153,6 +163,7 @@
         </p>
     </footer>
     <script src="{{ site.baseurl }}/public/js/sheet-texts.js"></script>
+    <script src="{{ site.baseurl }}/public/js/offer.js"></script>
     <script>
         // Markera aktiv meny
         const links = document.querySelectorAll('.nav-link');

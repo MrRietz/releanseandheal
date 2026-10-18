@@ -357,3 +357,33 @@ footer {
   background: #7c5c3e;
   color: #fff;
 }
+
+.offer-banner {
+  background: #fff;
+  color: #7c5c3e;
+  border: 2px solid #7c5c3e;
+  text-align: center;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 0 auto 30px auto;
+  max-width: 560px;
+  box-shadow: 0 2px 12px rgba(78, 52, 46, 0.1);
+}
+.offer-banner h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 10px 0;
+}
+.offer-banner p {
+  font-size: 1.1rem;
+  color: #7c5c3e;
+  margin: 0 0 6px 0;
+}
+.offer-notice {
+  background: #fdf3e3;
+  border: 1px solid #f6d2a5;
+  color: #7c5c3e;
+  padding: 12px;
+  border-radius: 6px;
+  text-align: center;
+}

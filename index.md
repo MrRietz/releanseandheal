@@ -39,7 +39,13 @@ page_id: home
 <h2 data-text-key="home.heading.002">Boka tid / Kontakt</h2>
 
 <p style="text-align:center; font-size:1.1em; margin-bottom:1em; color:#7c5c3e;" data-text-key="home.paragraph.001">Fyll i formuläret nedan för att boka tid eller kontakta mig.</p>
-<form action="https://formspree.io/f/xwpnrgzn" method="POST" style="max-width:400px;margin:0 auto 2em auto;display:flex;flex-direction:column;gap:16px;">
+<form data-offer-form action="https://formspree.io/f/xwpnrgzn" method="POST" style="max-width:400px;margin:0 auto 2em auto;display:flex;flex-direction:column;gap:16px;">
+  <div class="offer-notice" data-offer hidden>
+    <strong>Mässerbjudande aktiverat</strong><br>
+    20% rabatt på hypnos, NLP-coachning och Emotionskoden – 10% på övriga tjänster. Gäller 30 oktober – 30 november.
+  </div>
+  <input type="hidden" name="Mässerbjudande" value="Nej" disabled>
+  <input type="hidden" name="_subject" value="Bokningsförfrågan från hemsidan">
   <input type="text" name="Namn" placeholder="Namn" data-text-key="home.label.005" data-text-attr="placeholder" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;">
   <input type="email" name="E-post" placeholder="E-post" data-text-key="home.label.006" data-text-attr="placeholder" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;">
   <textarea name="Meddelande" placeholder="Meddelande" data-text-key="home.label.007" data-text-attr="placeholder" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;min-height:100px;"></textarea>
