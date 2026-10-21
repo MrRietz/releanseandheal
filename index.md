@@ -40,10 +40,6 @@ page_id: home
 
 <p style="text-align:center; font-size:1.1em; margin-bottom:1em; color:#7c5c3e;">Fyll i formuläret nedan för att boka tid eller kontakta mig.</p>
 <form data-offer-form action="https://formspree.io/f/xwpnrgzn" method="POST" style="max-width:400px;margin:0 auto 2em auto;display:flex;flex-direction:column;gap:16px;">
-  <div class="offer-notice" data-offer hidden>
-    <strong>Mässerbjudande aktiverat</strong><br>
-    20% rabatt på hypnos, NLP-coachning och Emotionskoden – 10% på övriga tjänster. Gäller 30 oktober – 30 november.
-  </div>
   <input type="hidden" name="Mässerbjudande" value="Nej" disabled>
   <input type="hidden" name="_subject" value="Bokningsförfrågan från hemsidan">
   <input type="text" name="Namn" placeholder="Namn" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;">
