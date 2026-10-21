@@ -24,15 +24,11 @@
             <div class="logo"><a href="{{ site.baseurl }}/"><img
                         src="{{ site.baseurl }}/public/img/Logga-3.png"
                         alt="Release & Heal logga"
-                        data-text-key="global.label.010"
-                        data-text-attr="alt"
                         style="max-height:200px; border-radius:12px; vertical-align:middle;"
                     ></a></div>
             <button
                 class="nav-toggle"
                 aria-label="Öppna meny"
-                data-text-key="global.label.006"
-                data-text-attr="aria-label"
                 onclick="document.querySelector('.nav-links').classList.toggle('open')"
             >
                 <svg
@@ -68,22 +64,18 @@
                 <li><a
                         href="{{ site.baseurl }}/"
                         class="nav-link"
-                        data-text-key="global.label.002"
                     >Hem</a></li>
                 <li><a
                         href="{{ site.baseurl }}/om-mig/"
                         class="nav-link"
-                        data-text-key="global.label.003"
                     >Om mig</a></li>
                 <li><a
                         href="{{ site.baseurl }}/tjanster/"
                         class="nav-link"
-                        data-text-key="global.label.004"
                     >Tjänster</a></li>
                 <li><a
                         href="{{ site.baseurl }}/bokning/"
                         class="nav-link"
-                        data-text-key="global.label.005"
                     >Boka tid</a></li>
             </ul>
         </nav>
@@ -91,23 +83,22 @@
             class="hero"
             id="home"
         >
-            <h1 data-text-key="{{ page.page_id | default: 'home' }}.label.001">{{ page.title }}</h1>
-            <p data-text-key="global.paragraph.001">{{ site.description }}</p>
+            <h1>{{ page.title }}</h1>
+            <p>{{ site.description }}</p>
             <section
                 class="offer-banner"
                 data-offer
                 hidden
             >
-                <h2 data-text-key="home.offer.001">Mässerbjudande</h2>
-                <p data-text-key="home.offer.002"><strong>20% rabatt</strong> på valfri session med hypnos, NLP-coachning eller Emotionskoden.</p>
-                <p data-text-key="home.offer.003"><strong>10% rabatt</strong> på övriga tjänster.</p>
-                <p data-text-key="home.offer.005"><em>Gäller 30 oktober – 30 november.</em></p>
+                <h2>Mässerbjudande</h2>
+                <p><strong>20% rabatt</strong> på valfri session med hypnos, NLP-coachning eller Emotionskoden.</p>
+                <p><strong>10% rabatt</strong> på övriga tjänster.</p>
+                <p><em>Gäller 30 oktober – 30 november.</em></p>
             </section>
             {% if page.url != '/bokning/' and page.url != '/bokning/index.html' %}
             <a
                 href="{{ site.baseurl }}/bokning/"
                 class="cta"
-                data-text-key="global.label.007"
             >Boka tid</a>
             {% endif %}
         </div>
@@ -116,7 +107,7 @@
         {{ content }}
     </main>
     <footer>
-        <p data-text-key="global.label.011">&copy; 2025 {{ site.title }}. Alla rättigheter förbehållna.</p>
+        <p>&copy; 2025 {{ site.title }}. Alla rättigheter förbehållna.</p>
         <p style="display:flex;justify-content:center;align-items:center;gap:24px;flex-wrap:wrap;">
             <a
                 href="https://www.facebook.com/releaseandhealemotionalfreedom"
@@ -137,7 +128,7 @@
                         fill="#4267B2"
                     />
                 </svg>
-                <span data-text-key="global.label.008">Facebook</span>
+                <span>Facebook</span>
             </a>
             <a
                 href="https://www.instagram.com/elisabethrietz.hela.dig"
@@ -158,11 +149,10 @@
                         fill="#E1306C"
                     />
                 </svg>
-                <span data-text-key="global.label.009">Instagram</span>
+                <span>Instagram</span>
             </a>
         </p>
     </footer>
-    <script src="{{ site.baseurl }}/public/js/sheet-texts.js"></script>
     <script src="{{ site.baseurl }}/public/js/offer.js"></script>
     <script>
         // Markera aktiv meny
