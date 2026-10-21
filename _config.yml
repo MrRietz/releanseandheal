@@ -8,3 +8,11 @@ theme: minima
 lang: sv
 
 
+
+# Not part of the site: Apps Script source and its README
+exclude:
+  - apps-script
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor

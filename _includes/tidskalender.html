@@ -1,0 +1,15 @@
+{%- comment -%}
+  Time booking calendar. Stays hidden and disabled unless public/js/tider.js activates it
+  (needs TIDER_CONFIG in public/js/tider-config.js, or ?tider=demo in the URL).
+  Disabled fields are not sent to Formspree, so the form behaves as before when inactive.
+{%- endcomment -%}
+<div id="tidskalender" hidden></div>
+<input type="hidden" name="Tid" disabled>
+<input type="hidden" name="Tid-kod" disabled>
+<label class="tider-none" hidden>
+  <input type="checkbox" name="Ingen tid passar" value="Ja" disabled>
+  <span>Ingen av tiderna passar, kontakta mig</span>
+</label>
+<div class="tider-hp" aria-hidden="true" hidden>
+  <label>Lämna detta fält tomt <input type="text" name="website" tabindex="-1" autocomplete="off" disabled></label>
+</div>

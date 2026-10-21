@@ -17,6 +17,7 @@ page_id: booking
   <select name="Tjänst" id="service-field" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;background:#fff;color:#7c5c3e;">
     {% include service-options.html %}
   </select>
+  {% include tidskalender.html %}
   <input type="text" name="Namn" placeholder="Namn" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;">
   <input type="email" name="E-post" placeholder="E-post" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;">
   <textarea name="Meddelande" placeholder="Meddelande" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;min-height:100px;"></textarea>

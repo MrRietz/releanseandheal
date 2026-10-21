@@ -457,3 +457,155 @@ footer {
   border-radius: 6px;
   text-align: center;
 }
+
+/* ===== Tidsbokning (kalender i bokningsformuläret, se public/js/tider.js) ===== */
+.tider-active {
+  max-width: 720px !important; /* the form has an inline max-width of 400px */
+}
+.tider [hidden],
+.tider-none[hidden],
+.tider-hp[hidden] {
+  display: none !important;
+}
+.tider {
+  background: #fdf3e3;
+  border: 1px solid #f6d2a5;
+  border-radius: 12px;
+  padding: 16px;
+  color: #7c5c3e;
+}
+.tider-title {
+  margin: 0 0 8px;
+  font-weight: 700;
+  text-align: center;
+}
+.tider-demo {
+  margin: 0 0 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px dashed #7c5c3e;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.tider-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.tider-week {
+  flex: 1 1 auto;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.tider-step,
+.tider-slot {
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: #7c5c3e;
+  background: #fff;
+  border: 1px solid #f6d2a5;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.tider-step:hover:not(:disabled),
+.tider-slot:hover {
+  background: #f6d2a5;
+}
+.tider-step:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.tider-step:focus-visible,
+.tider-slot:focus-visible,
+.tider-none input:focus-visible {
+  outline: 3px solid #7c5c3e;
+  outline-offset: 2px;
+}
+.tider-slot {
+  width: 100%;
+  min-height: 44px;
+  font-weight: 600;
+}
+.tider-slot[aria-pressed="true"] {
+  background: #7c5c3e;
+  border-color: #7c5c3e;
+  color: #fdf3e3;
+}
+.tider-slot[aria-pressed="true"]::before {
+  content: "\2713\00a0";
+}
+.tider-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.tider-dayname {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.tider-slots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+  gap: 6px;
+}
+.tider-empty {
+  margin: 8px 0;
+  text-align: center;
+  font-style: italic;
+}
+.tider-chosen {
+  margin: 12px 0 0;
+  font-weight: 700;
+  text-align: center;
+  min-height: 1.2em;
+}
+.tider-msg {
+  margin: 10px 0 0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #fff;
+  border: 1px solid #7c5c3e;
+  text-align: center;
+}
+.tider-none {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #7c5c3e;
+  cursor: pointer;
+}
+.tider-none input {
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+.tider-hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+@media (min-width: 640px) {
+  .tider-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(84px, 1fr));
+    align-items: start;
+    gap: 10px;
+  }
+  .tider-slots {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== Slut tidsbokning ===== */
