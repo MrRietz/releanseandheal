@@ -13,10 +13,10 @@ page_id: booking
   <input type="hidden" name="_subject" value="Bokningsförfrågan från hemsidan">
   <select name="Tjänst" id="service-field" data-offer hidden style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;background:#fff;color:#7c5c3e;">
     <option value="">Välj tjänst (valfritt)</option>
-    <option value="Hypnos" data-discount="20">Hypnos (20 %)</option>
-    <option value="NLP-coachning" data-discount="20">NLP-coachning (20 %)</option>
-    <option value="Emotionskoden" data-discount="20">Emotionskoden (20 %)</option>
-    <option value="Övrig tjänst" data-discount="10">Övrig tjänst (10 %)</option>
+    <option value="Hypnos" data-discount="20">Hypnos (20&nbsp;%)</option>
+    <option value="NLP-coachning" data-discount="20">NLP-coachning (20&nbsp;%)</option>
+    <option value="Emotionskoden" data-discount="20">Emotionskoden (20&nbsp;%)</option>
+    <option value="Övrig tjänst" data-discount="10">Övrig tjänst (10&nbsp;%)</option>
   </select>
   <input type="text" name="Namn" placeholder="Namn" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;">
   <input type="email" name="E-post" placeholder="E-post" required style="padding:12px;border-radius:6px;border:1px solid #f6d2a5;">
