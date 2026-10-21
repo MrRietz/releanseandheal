@@ -22,6 +22,12 @@ Allt görs i Google-arket, fliken **Tider**. Varje rad är en tid.
 
 Namn och e-post hamnar **aldrig** i arket. De kommer bara i mejlet från bokningsformuläret.
 
+### Din kalender
+
+- När en kund reserverar en tid dyker den upp i din Google Kalender som **Reserverad: ...** (tjänsten efter kolonet). Kundens namn och kontaktuppgifter finns inte där, bara i mejlet. Ingen blir inbjuden.
+- När du har bekräftat tiden med kunden: ändra händelsens rubrik i kalendern så att du ser att den är bokad.
+- Sätter du tillbaka **Ledig** i arket försvinner händelsen ur kalendern av sig själv.
+
 ## Del 2: Uppsättning (Robin)
 
 ### 1. Skapa arket
@@ -37,6 +43,7 @@ Skapa ett nytt Google-ark (privat) med två flikar:
 | C | Längd | minuter, frivillig |
 | D | Status | `Ledig`, `Reserverad` eller `Bokad` |
 | E | Reserverad | tidsstämpel, skrivs av skriptet |
+| F | Händelse-id | kalenderhändelsens id, skrivs av skriptet, rör ej |
 
 Markera kolumnerna A och B och välj Format > Siffror > Oformaterad text, så att datum och tid inte omvandlas av Google. Skriptet klarar även riktiga datum och tider, men oformaterad text är säkrast.
 
@@ -57,6 +64,20 @@ Markera kolumnerna A och B och välj Format > Siffror > Oformaterad text, så at
 4. Kopiera webbappens adress (slutar på `/exec`). Öppna den i webbläsaren: du ska se `{"ok":true}`.
 
 Ändrar du koden senare måste du skapa en **ny version** under Distribuera > Hantera distributioner, annars gäller den gamla koden.
+
+### Kalenderhändelser
+
+När en tid reserveras skapar skriptet en händelse i Google Kalender hos kontot som kör webbappen.
+
+1. Gör uppsättningen i Elisabeths Google-konto (då används hennes standardkalender). Alternativt: dela hennes kalender med redigeringsrätt med den som deployar och sätt `CALENDAR_ID` överst i `Code.gs` till kalenderns id. Tomt `CALENDAR_ID` betyder kontots standardkalender.
+2. Vid deployen frågar Google om åtkomst till kalendern. Godkänn.
+3. Skapa en utlösare så att händelsen tas bort när hon sätter tillbaka `Ledig`: **Apps Script > Utlösare > Lägg till utlösare**, funktion `onStatusEdit`, händelsekälla **Från kalkylblad**, händelsetyp **Vid redigering**. Godkänn behörigheterna. Utlösaren måste vara installerbar, den enkla `onEdit` räcker inte för kalendern.
+4. Kalendern innehåller: rubriken `Reserverad: <tjänst>` (`Reserverad tid` om tjänst saknas), start och längd från arket (60 minuter om Längd är tom eller ogiltig) och en beskrivning med Tid-koden. Den innehåller **inget** namn, ingen e-post och ingen gäst eller inbjudan.
+5. Händelsens id sparas i kolumn F på raden. Skriptet skapar rubriken `Händelse-id` själv om den saknas. När status sätts till `Ledig` tas händelsen bort och kolumn E och F töms.
+6. Ett fel i kalendern stoppar inte reservationen. Det loggas som `calendar-error` i fliken Logg. Borttagningen loggas som `calendar-released`.
+7. Stäng av genom att sätta `CALENDAR_ENABLED = false` överst i `Code.gs` och skapa en ny version av distributionen. Ta gärna bort utlösaren också.
+
+Obs: kolumn F syns i den publicerade CSV-adressen för fliken Tider. Id:t är inte en hemlighet och ger ingen åtkomst till kalendern, och hemsidan läser inte kolumnen.
 
 ### 4. Publicera bara fliken Tider som CSV
 
@@ -83,6 +104,7 @@ Tomma värden betyder ingen kalender.
 
 - **Demo först:** gå till `/bokning/?tider=demo`. Då visas exempeltider (vardagar 10:00, 13:00 och 15:00, närmaste tre veckorna) och inget skickas eller reserveras på riktigt. Lokalt: `bundle exec jekyll serve` och öppna `http://localhost:4000/bokning/?tider=demo`.
 - **Riktigt läge:** lägg en testtid i arket, öppna `/bokning/`, välj tiden och skicka. Kontrollera att raden blir `Reserverad`, att mejlet har fälten **Tid** och **Tid-kod**, och att raden syns i **Logg**. Sätt tillbaka `Ledig` efteråt.
+- **Kalender:** kontrollera att en händelse `Reserverad: ...` skapades i kalendern vid reservationen (med rätt start och längd, utan namn eller gäst), att kolumn F fick ett id, och att händelsen försvinner och kolumn E och F töms när du sätter tillbaka `Ledig`. Fel syns som `calendar-error` i Logg.
 
 ## Så fungerar det för kunden
 

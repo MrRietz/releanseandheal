@@ -2,15 +2,23 @@
 // Google Apps Script web app that reserves a free slot in a Google Sheet.
 //
 // Sheet layout (see README.md in this folder):
-//   Tab "Tider": Datum (YYYY-MM-DD) | Tid (HH:MM) | Längd (min, optional) | Status | Reserverad
+//   Tab "Tider": Datum (YYYY-MM-DD) | Tid (HH:MM) | Längd (min, optional) | Status | Reserverad | Händelse-id
 //   Tab "Logg":  private audit log, created automatically by this script.
 //
 // No names or e-mail addresses are ever stored here. They only travel in the Formspree e-mail.
+// A reserved slot also becomes an event in the Google Calendar of the account running the web app
+// (no customer data, no guests). onStatusEdit removes it again when the status is set back to "Ledig".
 // Pattern borrowed from the schema-noah project (LockService, rate limit, audit log).
 
 // Paste the id of your own spreadsheet here (the long string in the sheet URL).
 // Never commit a real id.
 const SPREADSHEET_ID = "PASTE_SPREADSHEET_ID_HERE";
+
+// Calendar event on reservation. Set CALENDAR_ENABLED to false to switch it off.
+const CALENDAR_ENABLED = true;
+// Empty string = the default calendar of the account running the script.
+const CALENDAR_ID = "";
+const DEFAULT_DURATION_MINUTES = 60;
 
 const TIMES_SHEET_NAME = "Tider";
 const LOG_SHEET_NAME = "Logg";
@@ -23,7 +31,10 @@ const COLUMN = {
   langd: 3,
   status: 4,
   reserverad: 5,
+  handelseId: 6,
 };
+
+const EVENT_ID_HEADER = "Händelse-id";
 
 const STATUS_FREE = "Ledig";
 const STATUS_RESERVED = "Reserverad";
@@ -110,6 +121,7 @@ function doPost(e) {
 
       sheet.getRange(rowIndex + 1, COLUMN.status).setValue(STATUS_RESERVED);
       sheet.getRange(rowIndex + 1, COLUMN.reserverad).setValue(Utilities.formatDate(now, TIMEZONE, "yyyy-MM-dd HH:mm:ss"));
+      createCalendarEvent(sheet, rowIndex + 1, row, datum, tid, payload);
       SpreadsheetApp.flush();
       logAttempt("reserved", payload, "");
       return jsonResponse({ ok: true });
@@ -128,6 +140,109 @@ function doPost(e) {
       lock.releaseLock();
     } catch (error) {
       // Ignore lock release errors.
+    }
+  }
+}
+
+// Creates the calendar event for a reserved row and stores its id in column F.
+// Never throws: a calendar problem must not stop the reservation.
+function createCalendarEvent(sheet, sheetRow, row, datum, tid, payload) {
+  if (!CALENDAR_ENABLED) {
+    return;
+  }
+
+  try {
+    const calendar = getCalendar();
+    const tjanst = String(payload.tjanst || "").trim();
+    const title = tjanst ? "Reserverad: " + truncate(tjanst) : "Reserverad tid";
+    const start = Utilities.parseDate(datum + " " + tid, TIMEZONE, "yyyy-MM-dd HH:mm");
+    const minutes = Number(row[COLUMN.langd - 1]);
+    const duration = isFinite(minutes) && minutes > 0 ? minutes : DEFAULT_DURATION_MINUTES;
+    const end = new Date(start.getTime() + duration * 60 * 1000);
+    const description = "Reserverad via hemsidan. Namn och kontaktuppgifter finns i bokningsmejlet från Formspree "
+      + "(Tid-kod: " + datum + "T" + tid + "). Bekräfta tiden och ändra rubriken när den är bokad.";
+
+    const event = calendar.createEvent(title, start, end, { description: description });
+
+    // Column F may be missing on older sheets: create the header first.
+    const headerCell = sheet.getRange(1, COLUMN.handelseId);
+    if (String(headerCell.getValue()).trim() !== EVENT_ID_HEADER) {
+      headerCell.setValue(EVENT_ID_HEADER);
+    }
+    sheet.getRange(sheetRow, COLUMN.handelseId).setValue(event.getId());
+  } catch (error) {
+    try {
+      logAttempt("calendar-error", payload, String(error));
+    } catch (logError) {
+      // Ignore logging errors.
+    }
+  }
+}
+
+function getCalendar() {
+  const calendar = CALENDAR_ID ? CalendarApp.getCalendarById(CALENDAR_ID) : CalendarApp.getDefaultCalendar();
+  if (!calendar) {
+    throw new Error("Calendar not found");
+  }
+  return calendar;
+}
+
+// Installable "On edit" trigger (spreadsheet): when Status in "Tider" is set back to "Ledig",
+// delete the calendar event and clear the Reserverad and Händelse-id cells on that row.
+// Errors are logged, never thrown.
+function onStatusEdit(e) {
+  try {
+    if (!CALENDAR_ENABLED || !e || !e.range) {
+      return;
+    }
+
+    const range = e.range;
+    const sheet = range.getSheet();
+    if (sheet.getName() !== TIMES_SHEET_NAME) {
+      return;
+    }
+    if (range.getColumn() > COLUMN.status || range.getLastColumn() < COLUMN.status) {
+      return;
+    }
+
+    const firstRow = Math.max(range.getRow(), 2); // row 1 holds the headers
+    for (let sheetRow = firstRow; sheetRow <= range.getLastRow(); sheetRow += 1) {
+      releaseCalendarEvent(sheet, sheetRow);
+    }
+  } catch (error) {
+    try {
+      logAttempt("calendar-error", {}, "onStatusEdit: " + String(error));
+    } catch (logError) {
+      // Ignore logging errors.
+    }
+  }
+}
+
+function releaseCalendarEvent(sheet, sheetRow) {
+  const payload = {};
+  try {
+    const row = sheet.getRange(sheetRow, 1, 1, COLUMN.handelseId).getValues()[0];
+    payload.datum = formatSheetDate(row[COLUMN.datum - 1]);
+    payload.tid = formatSheetTime(row[COLUMN.tid - 1]);
+
+    const eventId = String(row[COLUMN.handelseId - 1]).trim();
+    if (String(row[COLUMN.status - 1]).trim() !== STATUS_FREE || !eventId) {
+      return;
+    }
+
+    const event = getCalendar().getEventById(eventId);
+    if (event) {
+      event.deleteEvent();
+    }
+
+    sheet.getRange(sheetRow, COLUMN.reserverad).clearContent();
+    sheet.getRange(sheetRow, COLUMN.handelseId).clearContent();
+    logAttempt("calendar-released", payload, event ? "" : "Event not found, ids cleared");
+  } catch (error) {
+    try {
+      logAttempt("calendar-error", payload, "release: " + String(error));
+    } catch (logError) {
+      // Ignore logging errors.
     }
   }
 }

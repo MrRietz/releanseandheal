@@ -10,6 +10,7 @@ Prototypen är klar och provad i demoläge (`/bokning/?tider=demo`). Det här å
 - [ ] Publicera bara fliken `Tider` som CSV, och kontrollera att `Logg` inte går att nå.
 - [ ] Fyll i de två adresserna i `public/js/tider-config.js`.
 - [ ] Prova skarpt: lägg en testtid, boka den, och kontrollera att raden blir `Reserverad`, att mejlet har fälten `Tid` och `Tid-kod`, och att `Logg` fylls. Sätt tillbaka `Ledig` efteråt.
+- [ ] Skapa utlösaren för `onStatusEdit` och godkänn kalenderåtkomst.
 
 ## Tillsammans med mamma
 
@@ -19,7 +20,7 @@ Prototypen är klar och provad i demoläge (`/bokning/?tider=demo`). Det här å
 
 ## Kalenderuppdatering (förslag)
 
-- [ ] Skapa en händelse i hennes Google Kalender när en tid reserveras ("Reserverad: tjänst, längd").
+- [x] Skapa en händelse i hennes Google Kalender när en tid reserveras ("Reserverad: tjänst, längd").
   - Spara händelsens id i kolumn F så att den kan tas bort om tiden släpps.
   - Uppsättningen görs i hennes Google-konto, eller så delas kalendern med redigeringsrätt.
   - Skicka inte med kundens namn eller e-post, och bjud inte in kunden som gäst (missbruksrisk).
