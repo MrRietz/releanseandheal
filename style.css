@@ -119,6 +119,13 @@ nav {
     margin-bottom: 2px;
     font-size: 0.98em;
   }
+  table.tjanster-table td.boka-cell {
+    text-align: left !important;
+    padding-top: 4px;
+  }
+  table.tjanster-table td.boka-cell:before {
+    display: none;
+  }
   nav {
     flex-direction: column;
     gap: 15px;
@@ -358,12 +365,24 @@ footer {
   color: #fff;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
 .offer-banner {
-  background: #fff;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),
+    url("public/img/massan-akvarell.svg") center / cover no-repeat, #fff;
   color: #7c5c3e;
   border: 2px solid #7c5c3e;
   text-align: center;
-  padding: 20px;
+  padding: 24px 20px 20px;
   border-radius: 14px;
   margin: 0 auto 30px auto;
   max-width: 560px;
@@ -372,12 +391,63 @@ footer {
 .offer-banner h2 {
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin: 0 0 10px 0;
+  margin: 0 0 16px 0;
+}
+.offer-badges {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px 32px;
+}
+.offer-item {
+  flex: 1 1 200px;
+  max-width: 240px;
+}
+.offer-badge {
+  width: 112px;
+  height: 112px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  border: 3px solid #7c5c3e;
+  outline: 3px dashed #f6d2a5;
+  outline-offset: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #7c5c3e;
+}
+.offer-badge--main {
+  background: #7c5c3e;
+  color: #fff;
+}
+.offer-pct {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.offer-word {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-top: 4px;
 }
 .offer-banner p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #7c5c3e;
   margin: 0 0 6px 0;
+}
+.offer-banner .offer-dates {
+  display: inline-block;
+  margin: 18px 0 0;
+  padding: 4px 16px;
+  border-radius: 999px;
+  background: #fdf3e3;
+  border: 1px solid #f6d2a5;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 .offer-notice {
   background: #fdf3e3;
