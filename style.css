@@ -549,7 +549,9 @@ footer {
 .tider-dayname {
   margin: 0 0 6px;
   font-size: 1rem;
-  text-transform: capitalize;
+}
+.tider-dayname::first-letter {
+  text-transform: uppercase;
 }
 .tider-slots {
   list-style: none;
