@@ -43,3 +43,32 @@ page_id: services
   <tr><td data-label="Tjänst" style="padding:16px 12px;background:#fff;border-radius:12px;">12 veckors program för utmattade</td><td data-label="Tid" style="padding:16px 12px;background:#fff;border-radius:12px;">-</td><td data-label="Pris" style="padding:16px 12px;background:#fff;border-radius:12px;">Kontakta mig</td><td data-label="" class="boka-cell" style="padding:16px 12px;background:#fff;border-radius:12px;text-align:right;"><a class="cta" style="padding:8px 18px;font-size:0.95em;" href="{{ site.baseurl }}/bokning/?tjanst=tolv-veckors-program">Boka</a></td></tr>
   </tbody>
 </table>
+
+<h2 style="margin-top:2em;">Vanliga frågor</h2>
+
+<div class="faq">
+  <details>
+    <summary>Hur kommer jag igång?</summary>
+    <p>Du bokar ett utforskande samtal på 30 minuter, det är gratis. Där berättar du vad du önskar hjälp med och jag lyssnar in hur jag bäst kan hjälpa dig. Därefter bokar vi in första sessionen.</p>
+  </details>
+  <details>
+    <summary>Sker det på distans eller på plats?</summary>
+    <p>Främst på distans via videosamtal, men det finns även möjlighet till fysiska träffar i Veberöd.</p>
+  </details>
+  <details>
+    <summary>Hur många sessioner behöver jag?</summary>
+    <p>Det varierar beroende på vad vi arbetar med. Vi pratar om det i det utforskande samtalet.</p>
+  </details>
+  <details>
+    <summary>Hur betalar jag?</summary>
+    <p>Betalning sker innan behandling via swish eller bankkonto. Jag innehar F-skattsedel och är medlem i Friskvårdsförbundet samt Reikiförbundet.</p>
+  </details>
+  <details>
+    <summary>Är det konfidentiellt?</summary>
+    <p>Ja. Allt som kommer upp under behandling är konfidentiellt och jag arbetar under tystnadsplikt.</p>
+  </details>
+  <details>
+    <summary>Vad får jag efter en Emotion Code-behandling på distans?</summary>
+    <p>Du får en rapport över vilka emotioner som frigjorts.</p>
+  </details>
+</div>

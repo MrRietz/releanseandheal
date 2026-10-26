@@ -70,6 +70,10 @@
                         class="nav-link"
                     >Om mig</a></li>
                 <li><a
+                        href="{{ site.baseurl }}/sa-arbetar-jag/"
+                        class="nav-link"
+                    >Så arbetar jag</a></li>
+                <li><a
                         href="{{ site.baseurl }}/tjanster/"
                         class="nav-link"
                     >Tjänster</a></li>
@@ -114,6 +118,12 @@
     <main>
         {{ content }}
     </main>
+    {% if page.url != '/bokning/' and page.url != '/bokning/index.html' %}
+    <a
+        href="{{ site.baseurl }}/bokning/"
+        class="cta sticky-cta"
+    >Boka tid</a>
+    {% endif %}
     <footer>
         <p>&copy; 2025 {{ site.title }}. Alla rättigheter förbehållna.</p>
         <p style="display:flex;justify-content:center;align-items:center;gap:24px;flex-wrap:wrap;">
