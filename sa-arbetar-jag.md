@@ -131,7 +131,7 @@ page_id: methods
     <p class="meta">75–90 min · 1 295 kr</p>
     <a class="cta" href="{{ site.baseurl }}/bokning/?tjanst=livscoaching">Boka</a>
   </div>
-  <div class="metod">
+  <div class="metod metod-bred">
     <h3>EFT</h3>
     <p>EFT Tapping (Emotional Freedom Technique) är en psykologisk akupressurmetod där du knackar lätt med fingertopparna på olika meridianpunkter på kroppen samtidigt som du fokuserar på en känsla eller ett problem.</p>
     <details class="lasmer">
