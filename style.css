@@ -609,10 +609,12 @@ footer {
 }
 .metod-bild {
   display: block;
-  max-width: 100%;
+  max-width: min(100%, 420px);
   height: auto;
-  margin: 10px 0 14px 0;
-  border-radius: 12px;
+  margin: 14px auto 18px auto;
+  border-radius: 18px;
+  border: 6px solid #fff;
+  box-shadow: 0 6px 22px rgba(78, 52, 46, 0.18);
 }
 .trygghet {
   background: #fdf3e4;
