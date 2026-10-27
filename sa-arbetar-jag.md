@@ -5,8 +5,6 @@ permalink: /sa-arbetar-jag/
 page_id: methods
 ---
 
-## Så arbetar jag
-
 Jag ser holistiskt på människan och hälsan: det mentala, fysiska, emotionella och andliga hänger samman. Därför skräddarsyr jag hjälpen efter dina behov och kombinerar metoder utifrån vad som passar dig. Här berättar jag om verktygen jag arbetar med. Klicka på "Läs mer" för en fördjupning.
 
 ![Lavendel och kristaller]({{ site.baseurl }}/public/img/pexels-los-muertos-crew-7947789-1-1024x683.jpg){: .centrerad-bild}
@@ -17,6 +15,8 @@ Metoderna är ett komplement och ersätter inte läkarvård eller psykiatrisk be
 {: .liten-text}
 
 Osäker på vad som passar dig? Boka ett gratis utforskande samtal på 30 minuter.
+{: .centrerad}
+
 [Boka utforskande samtal]({{ site.baseurl }}/bokning/?tjanst=utforskande-samtal){: .cta}
 {: .centrerad}
 
@@ -39,7 +39,7 @@ Osäker på vad som passar dig? Boka ett gratis utforskande samtal på 30 minute
     close.type = 'button';
     close.className = 'metod-dialog-stang';
     close.setAttribute('aria-label', 'Stäng');
-    close.textContent = '×';
+    close.innerHTML = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
     var head = document.createElement('h3');
     head.textContent = title;
     var body = document.createElement('div');
@@ -75,9 +75,11 @@ Osäker på vad som passar dig? Boka ett gratis utforskande samtal på 30 minute
       Array.prototype.slice.call(det.children).forEach(function (n) {
         if (n !== summary) body.appendChild(n);
       });
+      document.documentElement.classList.add('modal-open');
       dlg.showModal();
     });
     dlg.addEventListener('close', function () {
+      document.documentElement.classList.remove('modal-open');
       Array.prototype.slice.call(body.childNodes).forEach(function (n) { det.appendChild(n); });
     });
     close.addEventListener('click', function () { dlg.close(); });

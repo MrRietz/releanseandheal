@@ -5,8 +5,6 @@ permalink: /bokning/
 page_id: booking
 ---
 
-## Boka tid
-
 Fyll i formuläret nedan för att boka tid eller kontakta mig.
 {: .centrerad .ingress}
 

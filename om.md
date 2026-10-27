@@ -5,8 +5,6 @@ permalink: /om-mig/
 page_id: about
 ---
 
-## Om mig
-
 <div class="foto-rad" markdown="1">
 <img src="{{ site.baseurl }}/public/img/IMG-20250305-WA0000.jpg" alt="Elisabeth Rietz">
 <div class="foto-text" markdown="1">

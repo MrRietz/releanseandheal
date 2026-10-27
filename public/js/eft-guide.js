@@ -41,6 +41,55 @@
   var ringar = {};
   root.querySelectorAll('.eftg-ring').forEach(function (r) { ringar[r.getAttribute('data-punkt')] = r; });
 
+  // På mobil zoomar "kameran" in på aktiv punkt så att den syns tydligt.
+  var svg = root.querySelector('.eftg-svg');
+  var HELA = { x: 14, y: 352, w: 270, h: 310 };
+  var kompakt = window.matchMedia('(max-width: 720px)');
+  var lugn = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var nuVB = { x: HELA.x, y: HELA.y, w: HELA.w, h: HELA.h };
+  var anim = null;
+
+  function klampa(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+  function fonster(slug) {
+    if (!kompakt.matches) return HELA;
+    var d = dots[slug];
+    var cx = +d.getAttribute('cx');
+    var cy = +d.getAttribute('cy');
+    var tag = punkter[slug].querySelector('rect');
+    var hogerkant = +tag.getAttribute('x') + +tag.getAttribute('width');
+    var w = 170;
+    var h = w * HELA.h / HELA.w;
+    return {
+      x: klampa(hogerkant + 6 - w, HELA.x, HELA.x + HELA.w - w),
+      y: klampa(cy - h * 0.5, HELA.y, HELA.y + HELA.h - h),
+      w: w,
+      h: h
+    };
+  }
+  function sattVB(v) {
+    nuVB = { x: v.x, y: v.y, w: v.w, h: v.h };
+    svg.setAttribute('viewBox', v.x + ' ' + v.y + ' ' + v.w + ' ' + v.h);
+  }
+  function zoomaTill(mal) {
+    if (anim) cancelAnimationFrame(anim);
+    if (lugn.matches) { sattVB(mal); return; }
+    var fran = { x: nuVB.x, y: nuVB.y, w: nuVB.w, h: nuVB.h };
+    var start = null;
+    function steg(t) {
+      if (start === null) start = t;
+      var p = Math.min(1, (t - start) / 550);
+      var e = p < 0.5 ? 2 * p * p : 1 - Math.pow(-2 * p + 2, 2) / 2;
+      sattVB({
+        x: fran.x + (mal.x - fran.x) * e,
+        y: fran.y + (mal.y - fran.y) * e,
+        w: fran.w + (mal.w - fran.w) * e,
+        h: fran.h + (mal.h - fran.h) * e
+      });
+      if (p < 1) anim = requestAnimationFrame(steg);
+    }
+    anim = requestAnimationFrame(steg);
+  }
+
   var kansla = '';
   var fore = 5;
   var index = 0;
@@ -92,6 +141,7 @@
   function visaPunkt() {
     taps = 0;
     markera();
+    zoomaTill(fonster(ORDNING[index]));
     nollstallTakt();
     status.textContent = fyll(T.knack_status, {
       nr: index + 1,
@@ -131,8 +181,10 @@
     pausad = false;
     paus.textContent = T.knack_paus;
     paus.setAttribute('aria-pressed', 'false');
+    sattVB(HELA);
     visaSkarm('knack');
     visaPunkt();
+    if (kompakt.matches) root.scrollIntoView({ behavior: lugn.matches ? 'auto' : 'smooth', block: 'start' });
   }
 
   chips.forEach(function (c) {
@@ -148,6 +200,9 @@
   startKnapp.addEventListener('click', function () { fore = +foreIn.value; starta(); });
   paus.addEventListener('click', function () { sattPaus(!pausad); });
   nasta.addEventListener('click', function () { klarMedPunkt(); });
+  kompakt.addEventListener('change', function () {
+    if (skarm.knack && !skarm.knack.hidden && index < ORDNING.length) sattVB(fonster(ORDNING[index]));
+  });
   document.addEventListener('visibilitychange', function () {
     if (document.hidden && !pausad && skarm.knack && !skarm.knack.hidden) sattPaus(true);
   });

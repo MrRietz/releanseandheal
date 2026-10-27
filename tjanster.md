@@ -5,8 +5,6 @@ permalink: /tjanster/
 page_id: services
 ---
 
-## Tjänster
-
 Inledningsvis bokar du ett utforskande samtal på 30 min via bokningssidan. Där får du berätta vad du önskar hjälp med och jag lyssnar in hur jag bäst kan hjälpa dig. Därefter bokar vi in första sessionen utifrån dina behov. Antal sessioner varierar beroende på vad vi arbetar med.
 
 Sessioner och behandlingar sker främst på distans eller via videosamtal, men det finns även möjlighet till fysiska träffar i Veberöd. Efter distansbehandling med Emotion Code får du en rapport över vilka emotioner som frigjorts. Allt som kommer upp under behandling är konfidentiellt och jag arbetar under tystnadsplikt.
