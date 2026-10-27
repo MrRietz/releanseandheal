@@ -23,8 +23,9 @@ Alla texter ligger i vanliga textfiler som du kan ändra direkt i webbläsaren p
 2. Klicka dig fram till filen (mapparna ligger i listan), eller tryck på `t` och skriv filnamnet.
 3. Klicka på **pennan** uppe till höger (Edit this file).
 4. Ändra texten. Fliken **Preview** visar ungefär hur det ser ut.
-5. Klicka **Commit changes…**, skriv kort vad du ändrat (t.ex. "Ny text om Reiki") och bekräfta.
-6. Efter en till två minuter är ändringen publicerad på releaseandheal.se. Ladda om med Ctrl+F5 om du inte ser den.
+5. Klicka den gröna knappen **Commit changes…** (eller **Propose changes**), skriv kort vad du ändrat (t.ex. "Ny text om Reiki") och bekräfta.
+6. Om GitHub visar en sida som heter **Comparing changes**: klicka **Create pull request** och sedan **Create pull request** en gång till. Då har du skickat din ändring till Robin.
+7. Robin tittar på ändringen och godkänner den. Efter en till två minuter är den publicerad på releaseandheal.se. Ladda om med Ctrl+F5 om du inte ser den.
 
 Blir det fel kan Robin alltid ångra ändringen. Inget går förlorat.
 
