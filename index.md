@@ -9,7 +9,7 @@ page_id: home
 <p>Så fint att du hittat hit! Jag som driver Release & Heal heter Elisabeth Rietz och jag är coach, terapeut, healer & medium.</p>
 
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:32px;margin:2em 0;">
-  <img src="public/img/elisabeth1.jpg" alt="Elisabeth Rietz" style="max-width:260px;width:100%;border-radius:16px;box-shadow:0 2px 12px rgba(78,52,46,0.09);">
+  <img src="public/img/IMG-20250305-WA0000.jpg" alt="Elisabeth Rietz" style="max-width:260px;width:100%;border-radius:16px;box-shadow:0 2px 12px rgba(78,52,46,0.09);">
   <div style="flex:1;min-width:240px;">
     <p>Jag ser holistiskt på människan och hälsan. Allt hänger samman – det mentala, fysiska, emotionella och andliga. Du får stöd och vägledning med metoder som hjälper dig med stress, utmattning, självkänsla, medberoende och ohjälpsamma mönster. Vill du kan du även få medial vägledning för att hitta din livsväg och lära känna dig själv på djupet.</p>
 

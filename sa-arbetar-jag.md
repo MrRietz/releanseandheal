@@ -76,8 +76,8 @@ page_id: methods
       <p class="kalla">Källan till information om Emotion Code är hämtad från Dr. Bradley Nelsons bok Emotion Code.</p>
       <p>Vill du veta mer? Se gärna den korta introduktionsvideon med grundaren Dr. Bradley Nelson: <a href="https://www.youtube.com/watch?v=m74cWR1Az0I&amp;t=130s" target="_blank" rel="noopener">What is the Emotion Code</a></p>
     </details>
-    <p class="meta">Från 850 kr</p>
-    <a class="cta" href="{{ site.baseurl }}/bokning/?tjanst=emotion-code-distans">Boka</a>
+    <p class="meta">55 min · 995 kr</p>
+    <a class="cta" href="{{ site.baseurl }}/bokning/?tjanst=emotion-code-digitalt">Boka</a>
   </div>
   <div class="metod">
     <h3>Hjärtmuren</h3>
