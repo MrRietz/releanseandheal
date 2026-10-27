@@ -581,6 +581,14 @@ footer {
 }
 
 /* Fördjupning i metodkort och trygghetsruta */
+.metod .metod-tagline {
+  margin: -2px 0 8px 0;
+  font-style: italic;
+  color: #7c5c3e;
+}
+.metod-bred .metod-tagline {
+  color: #3d7167;
+}
 .metod .lasmer {
   margin: auto 0 12px 0;
 }
@@ -613,8 +621,11 @@ footer {
   content: "\2661\00a0";
   color: #7c5c3e;
 }
-.metod-bred:has(.lasmer[open]) {
+.metod:has(.lasmer[open]) {
   flex-basis: 100%;
+}
+.metod .lasmer[open] > :not(summary) {
+  max-width: 800px;
 }
 /* "Läs mer" som mjuk knapp, med fade-in när texten fälls ut */
 .metod .lasmer summary {
@@ -634,6 +645,9 @@ footer {
 }
 .metod .lasmer[open] summary::after {
   content: " \25B4";
+}
+.metod .lasmer[open] summary {
+  margin-bottom: 12px;
 }
 .metod .lasmer summary:hover {
   background: #fff8ee;

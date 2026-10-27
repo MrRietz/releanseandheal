@@ -16,11 +16,10 @@ page_id: methods
 <div class="metoder">
   <div class="metod">
     <h3>NLP-coaching</h3>
-    <p>NLP (Neuro-Lingvistisk Programmering) handlar om samspelet mellan våra tankar, vårt språk och våra beteenden. Som utbildad NLP-coach använder jag bland annat visualisering, språkliga verktyg och mental träning när vi utforskar dina tankemönster och hittar nya perspektiv och möjligheter.</p>
+    <p class="metod-tagline">Förstå dina tankar och skapa nya möjligheter</p>
+    <p>Hur skulle ditt liv kunna förändras om du såg på dig själv och dina möjligheter med nya ögon?</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om NLP-coaching</span></summary>
-      <h4>NLP – förstå dina tankar och skapa nya möjligheter</h4>
-      <p>Hur skulle ditt liv kunna förändras om du såg på dig själv och dina möjligheter med nya ögon?</p>
       <p>NLP står för Neuro-Lingvistisk Programmering och handlar om samspelet mellan våra tankar, vårt språk och våra beteenden. Genom att bli medvetna om våra invanda mönster kan vi utforska nya perspektiv och hitta nya sätt att tänka, kommunicera och agera.</p>
       <p>Som utbildad NLP-coach tar jag hjälp av exempelvis visualisering, språkliga verktyg och mental träning när vi utforskar dina tankemönster och resurser för att hitta nya perspektiv och möjligheter som du kan ta med dig in i vardagen.</p>
       <h4>Vad kan NLP användas till?</h4>
@@ -39,11 +38,10 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Hypnoterapi</h3>
-    <p>Hypnos är en väg till mental avslappning, inre utforskande och personlig utveckling. Jag guidar dig genom en inre resa med fokus på avslappning och mental fokusering. Du är hela tiden delaktig utan att behöva prestera, och jag förklarar hur det går till innan vi börjar.</p>
+    <p class="metod-tagline">En inre resa mot nya möjligheter</p>
+    <p>Välkommen att upptäcka hypnos som en väg till mental avslappning, inre utforskande och personlig utveckling!</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Hypnoterapi</span></summary>
-      <h4>Hypnos – en inre resa mot nya möjligheter</h4>
-      <p>Välkommen att upptäcka hypnos som en väg till mental avslappning, inre utforskande och personlig utveckling!</p>
       <p>I mina hypnossessioner guidar jag dig genom en inre resa med fokus på avslappning, mental fokusering och stödjande förändringsförstärkande arbete. I kontakt med det undermedvetna skapar vi utrymme för att utforska inre processer, mönster och minnen som kan påverka hur vi tänker, känner och agerar, stärka dina egna resurser och självkänslan samt rikta uppmärksamheten mot det du vill utveckla eller förändra. Hypnos är en individuell upplevelse där du hela tiden är delaktig utan att behöva prestera. Jag förklarar hur det går till innan vi börjar.</p>
       <h4>Vad kan hypnos användas till?</h4>
       <p>Hypnos kan användas som ett verktyg för personlig utveckling och kan ge utrymme att utforska hur du kan:</p>
@@ -61,11 +59,11 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Emotion Code</h3>
-    <p>Emotion Code är en metod utvecklad av Dr. Bradley Nelson. Enligt metoden kan olösta känslor "fastna" i kroppen och påverka hur vi mår. Med kinesiologisk muskeltestning identifierar jag vilka känslor som sitter fast och frigör dem. Du behöver inte prata om eller återuppleva gamla trauman. Behandlingen fungerar bra på distans, och efteråt får du en rapport över vilka emotioner som frigjorts.</p>
+    <p class="metod-tagline">Släpp ditt emotionella bagage</p>
+    <p>Emotion Code är en metod utvecklad av Dr. Bradley Nelson. Enligt metoden kan olösta känslor "fastna" i kroppen och påverka hur vi mår.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Emotion Code</span></summary>
-      <h4>Emotion Code – släpp ditt emotionella bagage</h4>
-      <p>Emotion Code är en metod utvecklad av Dr. Bradley Nelson. Enligt metoden kan olösta känslor "fastna" i kroppen och påverka hur vi mår. När vi går igenom svåra händelser eller perioder av stress, ilska eller skuld händer det att vi inte hinner eller orkar bearbeta känslorna fullt ut. Eftersom känslor består av ren energi kan de fastna i kroppen som små blockeringar. Det är detta vi i vardagen brukar kalla för vårt "emotionella bagage". Det fina med Emotion Code är att du inte behöver prata om eller återuppleva gamla trauman för att bli av med dem.</p>
+      <p>När vi går igenom svåra händelser eller perioder av stress, ilska eller skuld händer det att vi inte hinner eller orkar bearbeta känslorna fullt ut. Eftersom känslor består av ren energi kan de fastna i kroppen som små blockeringar. Det är detta vi i vardagen brukar kalla för vårt "emotionella bagage". Det fina med Emotion Code är att du inte behöver prata om eller återuppleva gamla trauman för att bli av med dem.</p>
       <h4>Så här gör jag</h4>
       <ol>
         <li>Jag kopplar upp mig mot din energi och använder kinesiologisk muskeltestning via mina fingrar för att ställa frågor till ditt undermedvetna.</li>
@@ -81,10 +79,10 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Hjärtmuren</h3>
-    <p>Hjärtmuren är en del av Emotion Code. Den har genom livet byggts upp av instängda emotioner som ett skydd mot smärta och sorg, och kan hindra dig från att känna och ta emot kärlek. Processen att ta bort den tar cirka en till två veckor med ett antal sessioner.</p>
+    <p>Hjärtmuren är en del av Emotion Coden. De allra flesta människor har en hjärtmur som genom livet byggts upp av instängda emotioner som ett skydd mot smärta och sorg.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Hjärtmuren</span></summary>
-      <p>Hjärtmuren är en del av Emotion Coden. De allra flesta människor har en hjärtmur som genom livet byggts upp av instängda emotioner som ett skydd mot smärta och sorg. En hjärtmur kan hindra dig från att leva livet fullt ut och kan påverka dig både fysiskt och emotionellt. Även om du inte har några uttalade problem i ditt liv får du stora fördelar av att avlägsna hjärtmuren. En hjärtmur kan stå i vägen för att känna och ta emot kärlek, försvåra för din intuition att komma fram, kontakten med din själ, din kreativitet, din fulla potential och din självläkande förmåga. Fördelarna med att ta bort hjärtmuren är att när blockeringar i form av stagnerad energi är avlägsnade öppnas det upp för ett nytt flöde av livskraft som påverkar många delar i ditt liv.</p>
+      <p>En hjärtmur kan hindra dig från att leva livet fullt ut och kan påverka dig både fysiskt och emotionellt. Även om du inte har några uttalade problem i ditt liv får du stora fördelar av att avlägsna hjärtmuren. En hjärtmur kan stå i vägen för att känna och ta emot kärlek, försvåra för din intuition att komma fram, kontakten med din själ, din kreativitet, din fulla potential och din självläkande förmåga. Fördelarna med att ta bort hjärtmuren är att när blockeringar i form av stagnerad energi är avlägsnade öppnas det upp för ett nytt flöde av livskraft som påverkar många delar i ditt liv.</p>
       <p>Processen att ta bort en hjärtmur tar cirka en till två veckor med ett antal sessioner eftersom kroppen behöver tid för vila och bearbeta de emotioner som frigjorts. Behandlingen är djupgående och vissa klienter kan känna som ett eko av någon av emotionerna som frigjorts vilket går över ganska så snart.</p>
       <p class="kalla">Källan till information om Hjärtmuren är hämtad från Dr. Bradley Nelsons bok Emotion Code.</p>
     </details>
@@ -93,11 +91,11 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Reiki</h3>
-    <p>Reiki är en japansk healingmetod, grundad av Mikao Usui i början av 1900-talet, som handlar om att skapa balans i kropp och sinne. Ordet betyder ungefär "universell livsenergi". Jag använder mjuka handpåläggningar på plats, men erbjuder även distanshealing. Behandlingen är djupt avslappnande.</p>
+    <p class="metod-tagline">Fyll på med ny livsenergi</p>
+    <p>Reiki är en japansk metod, grundad av Mikao Usui i början av 1900-talet. Det är en mjuk och effektiv healingmetod som handlar om att skapa balans i kropp och sinne.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Reiki</span></summary>
-      <h4>Reiki – fyll på med ny livsenergi</h4>
-      <p>Reiki är en japansk metod, grundad av Mikao Usui i början av 1900-talet. Det är en mjuk och effektiv healingmetod som handlar om att skapa balans i kropp och sinne. Ordet Reiki betyder ungefär "universell livsenergi". Genom att lösa upp spänningar och frigöra blockeringar hjälper vi kroppens eget energiflöde att återhämta sig på ett naturligt sätt. När du bokar en individuell behandling anpassar jag stunden helt efter dina behov. Vi använder oss av mjuka handpåläggningar på plats, men erbjuder även distanshealing för dig som föredrar det. Behandlingen är djupt avslappnande och används ofta för att:</p>
+      <p>Ordet Reiki betyder ungefär "universell livsenergi". Genom att lösa upp spänningar och frigöra blockeringar hjälper vi kroppens eget energiflöde att återhämta sig på ett naturligt sätt. När du bokar en individuell behandling anpassar jag stunden helt efter dina behov. Vi använder oss av mjuka handpåläggningar på plats, men erbjuder även distanshealing för dig som föredrar det. Behandlingen är djupt avslappnande och används ofta för att:</p>
       <ul>
         <li>Minska stress, oro och mentala spänningar</li>
         <li>Lindra fysisk smärta och påskynda kroppens återhämtning</li>
@@ -110,30 +108,30 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Medial vägledning</h3>
-    <p>Vid medial vägledning använder jag orakel- och tarotkort för att öppna upp och förmedla budskap, med ett kort för dåtid, nutid och framtid. Du kan använda dem som underlag för egen reflektion. Det är inte ett facit eller en förutsägelse, du känner själv vad som känns rätt för dig.</p>
+    <p>Vid medial vägledning använder jag orakel- och tarotkort för att öppna upp och förmedla budskap.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Medial vägledning</span></summary>
-      <p>Vid medial vägledning använder jag orakel- och tarotkort för att öppna upp och förmedla budskap. När jag använder korten lägger jag ett kort för dåtid, nutid och framtid och det är alltid lika magiskt hur jag genom dessa kort kan känna in hur klientens liv sett ut, utmaningar som klienten haft, styrkor, hur nutid ser ut och hur dåtid och nutid skapar framtid. Det blir som en magisk väv där jag läser av klienten genom korten och frågor som klienten bär på eller vägval som klienten står inför besvaras och förtydligas utan att frågorna behöver ställas. Helt magiskt! Klienter uttrycker att sittningen med mig sveper in dem i en jordad och trygg stund och att de får ett större perspektiv. Du kan använda dem som underlag för egen reflektion och för att få perspektiv på din livsväg. Det är inte ett facit eller en förutsägelse, du känner själv vad som känns rätt för dig.</p>
+      <p>När jag använder korten lägger jag ett kort för dåtid, nutid och framtid och det är alltid lika magiskt hur jag genom dessa kort kan känna in hur klientens liv sett ut, utmaningar som klienten haft, styrkor, hur nutid ser ut och hur dåtid och nutid skapar framtid. Det blir som en magisk väv där jag läser av klienten genom korten och frågor som klienten bär på eller vägval som klienten står inför besvaras och förtydligas utan att frågorna behöver ställas. Helt magiskt! Klienter uttrycker att sittningen med mig sveper in dem i en jordad och trygg stund och att de får ett större perspektiv. Du kan använda dem som underlag för egen reflektion och för att få perspektiv på din livsväg. Det är inte ett facit eller en förutsägelse, du känner själv vad som känns rätt för dig.</p>
     </details>
     <p class="meta">30 min · 500 kr, 60 min · 850 kr</p>
     <a class="cta" href="{{ site.baseurl }}/bokning/?tjanst=medial-30">Boka</a>
   </div>
   <div class="metod">
     <h3>Livscoachning & Återhämtningsterapi</h3>
-    <p>Livscoachning är ett samtal där du får tid och utrymme att sortera tankar och känslor, sätta ord på vad du vill och ta nästa steg. Återhämtningsterapin är en holistisk metod för dig som lider av utmattning, stressrelaterad ohälsa eller andra livskriser.</p>
+    <p>Livscoaching är ett samtal där du får tid och utrymme att sortera tankar och känslor, sätta ord på vad du vill och ta nästa steg. Återhämtningsterapin är en holistisk metod för dig som lider av utmattning, stressrelaterad ohälsa eller andra livskriser.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Livscoachning & Återhämtningsterapi</span></summary>
       <h4>Livscoachning</h4>
-      <p>Livscoaching är ett samtal där du får tid och utrymme att sortera tankar och känslor, sätta ord på vad du vill och ta nästa steg. Jag ställer frågor och lyssnar, och genom det finner du dina egna svar. Ibland gör vi en NLP-process för att få klarhet och komma vidare. Vi arbetar med exempelvis att sätta gränser, självkänsla och självledarskap.</p>
+      <p>Jag ställer frågor och lyssnar, och genom det finner du dina egna svar. Ibland gör vi en NLP-process för att få klarhet och komma vidare. Vi arbetar med exempelvis att sätta gränser, självkänsla och självledarskap.</p>
       <h4>Återhämtningsterapi</h4>
-      <p>Återhämtningsterapin är en holistisk metod för dig som lider av utmattning, stressrelaterad ohälsa eller andra livskriser. Jag som terapeut möter dig där du befinner dig på din livsresa. Vi tittar tillsammans på orsaken bakom orsaken, det vill säga inte bara på de yttre stressfaktorerna utan även på bakomliggande mönster som låg självkänsla, svårighet att sätta gränser eller att leva i linje med sina egna behov. Även här kan en NLP-process eller hypnos vara behjälpligt för att komma tillrätta med det som ligger bakom stressen.</p>
+      <p>Jag som terapeut möter dig där du befinner dig på din livsresa. Vi tittar tillsammans på orsaken bakom orsaken, det vill säga inte bara på de yttre stressfaktorerna utan även på bakomliggande mönster som låg självkänsla, svårighet att sätta gränser eller att leva i linje med sina egna behov. Även här kan en NLP-process eller hypnos vara behjälpligt för att komma tillrätta med det som ligger bakom stressen.</p>
     </details>
     <p class="meta">75–90 min · 1 295 kr</p>
     <a class="cta" href="{{ site.baseurl }}/bokning/?tjanst=livscoaching">Boka</a>
   </div>
   <div class="metod metod-bred">
     <h3>EFT</h3>
-    <p>EFT Tapping (Emotional Freedom Technique) är en psykologisk akupressurmetod där du knackar lätt med fingertopparna på olika meridianpunkter på kroppen samtidigt som du fokuserar på en känsla eller ett problem.</p>
+    <p>EFT Tapping (Emotional Freedom Technique) är en psykologisk akupressurmetod som kombinerar element från traditionell kinesisk medicin och modern psykologi.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om EFT</span></summary>
       <figure class="eft-info">
@@ -187,7 +185,7 @@ page_id: methods
         </div>
         <p class="eft-info-foot">♡ Mindfulla verktyg · Mindre stress · Mer lugn · Ökat välbefinnande</p>
       </figure>
-      <p>EFT Tapping (Emotional Freedom Technique) är en psykologisk akupressurmetod som kombinerar element från traditionell kinesisk medicin och modern psykologi. Du knackar lätt med fingertopparna på olika meridianpunkter på kroppen samtidigt som du har mental fokus på en särskild negativ känsla eller problem. Det kan vara allt ifrån stress och ångest till fysisk smärta eller negativa tankemönster.</p>
+      <p>Du knackar lätt med fingertopparna på olika meridianpunkter på kroppen samtidigt som du har mental fokus på en särskild negativ känsla eller problem. Det kan vara allt ifrån stress och ångest till fysisk smärta eller negativa tankemönster.</p>
       <p>Syftet är att återställa kroppens energibalans och minska eller eliminera obehagliga känslor. Metoden är enkel och kan utföras nästan var som helst och när som helst, och det krävs inga verktyg eller särskilda förberedelser. Det är en effektiv metod som många människor använder och det har blivit ett populärt verktyg inom stresshantering och personlig utveckling.</p>
     </details>
     <a class="cta" href="{{ site.baseurl }}/bokning/?tjanst=eft">Kontakta mig</a>
