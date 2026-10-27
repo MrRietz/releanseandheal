@@ -1059,8 +1059,12 @@ main > ul {
 }
 
 /* EFT-guiden */
+body[data-page-id="eft-guide"] .sticky-cta {
+  display: none;
+}
+
 .eftg {
-  max-width: 640px;
+  max-width: 780px;
   margin: 24px auto;
   padding: 24px;
   background: linear-gradient(145deg, #f1f5e9 0%, #dfeadb 100%);
@@ -1138,14 +1142,132 @@ main > ul {
   opacity: 0.5;
   cursor: not-allowed;
 }
+.eftg-steg {
+  display: flex;
+  gap: 6px;
+  margin: 0 0 14px 0;
+}
+.eftg-steg span {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: rgba(61, 113, 103, 0.18);
+  transition: background 0.4s ease;
+}
+.eftg-steg span.klar {
+  background: #3d7167;
+}
+.eftg-steg span.aktiv {
+  background: #d9803f;
+}
 .eftg-status {
+  margin: 0 0 18px 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1f5b50;
   text-align: center;
-  font-weight: 600;
-  color: #3d7167;
+}
+.eftg-raster {
+  display: grid;
+  grid-template-columns: minmax(0, 380px) 1fr;
+  gap: 28px;
+  align-items: center;
+}
+@media (max-width: 720px) {
+  .eftg-raster {
+    grid-template-columns: 1fr;
+  }
 }
 .eftg-scen {
+  width: 100%;
   max-width: 380px;
   margin: 0 auto;
+}
+.eftg-sida {
+  text-align: center;
+}
+.eftg-orb {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  margin: 0 auto 18px auto;
+  display: grid;
+  place-items: center;
+}
+.eftg-orb-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(61, 113, 103, 0.22);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+}
+.eftg-orb-kropp {
+  position: absolute;
+  inset: 14px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ffffff 0%, #d4e8dc 42%, #7fb3a3 100%);
+  box-shadow: 0 0 40px rgba(127, 179, 163, 0.65), inset 0 -8px 18px rgba(61, 113, 103, 0.25);
+  transform: scale(0.6);
+  animation: eftg-orb 8s ease-in-out infinite;
+}
+.eftg-orb-in,
+.eftg-orb-ut {
+  position: relative;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #143f37;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+  grid-area: 1 / 1;
+  opacity: 0;
+}
+.eftg-orb-in {
+  animation: eftg-text-in 8s ease-in-out infinite;
+}
+.eftg-orb-ut {
+  animation: eftg-text-ut 8s ease-in-out infinite;
+}
+@keyframes eftg-orb {
+  0%, 100% { transform: scale(0.6); }
+  50% { transform: scale(1); }
+}
+@keyframes eftg-text-in {
+  0% { opacity: 0; }
+  10%, 40% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+@keyframes eftg-text-ut {
+  0%, 50% { opacity: 0; }
+  60%, 90% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.eftg-diff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 4px 0 14px 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.eftg-diff span {
+  min-width: 1.4em;
+  text-align: center;
+  color: #6f8a83;
+}
+.eftg-diff .eftg-diff-pil {
+  min-width: 0;
+  font-size: 1.8rem;
+  color: #3d7167;
+}
+.eftg-diff .battre {
+  color: #2f8a63;
+}
+.eftg-diff .hogre {
+  color: #c4733a;
 }
 .eftg-svg {
   width: 100%;
@@ -1226,22 +1348,6 @@ main > ul {
   border-color: #3d7167;
   transform: scale(1.15);
 }
-.eftg-andning {
-  text-align: center;
-  margin-top: 10px;
-}
-.eftg-andning span {
-  display: inline-block;
-  padding: 6px 18px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.75);
-  font-size: 0.9rem;
-  animation: eftg-andas 8s ease-in-out infinite;
-}
-@keyframes eftg-andas {
-  0%, 100% { transform: scale(0.95); opacity: 0.7; }
-  50% { transform: scale(1.08); opacity: 1; }
-}
 .eftg-instruktion {
   text-align: center;
   margin: 12px 0 14px 0;
@@ -1274,10 +1380,24 @@ main > ul {
 @media (prefers-reduced-motion: reduce) {
   .eftg-dot.puls,
   .eftg-ring.puls,
-  .eftg-andning span {
+  .eftg-orb-kropp,
+  .eftg-orb-in,
+  .eftg-orb-ut {
     animation: none;
   }
-  .eftg-takt span {
+  .eftg-orb-kropp {
+    transform: scale(0.85);
+  }
+  .eftg-orb::after {
+    content: attr(data-stilla);
+    position: relative;
+    grid-area: 1 / 1;
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700;
+    color: #1f5b50;
+  }
+  .eftg-takt span,
+  .eftg-steg span {
     transition: none;
   }
 }

@@ -19,7 +19,9 @@ knack_instruktion: Tänk på känslan ”{kansla}” medan du knackar lätt på 
 knack_paus: Pausa
 knack_forts: Fortsätt
 knack_nasta: Hoppa till nästa punkt
-andas: Andas in … och ut …
+andas_in: Andas in
+andas_ut: Andas ut
+andas_stilla: Andas lugnt
 
 klar_rubrik: Hur känns det nu?
 klar_fraga: Hur starkt känns det nu, från 0 till 10?

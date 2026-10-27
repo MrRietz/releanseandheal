@@ -24,16 +24,26 @@
   </section>
 
   <section class="eftg-skarm" data-skarm="knack" hidden>
+    <div class="eftg-steg" aria-hidden="true">{% for i in (1..8) %}<span></span>{% endfor %}</div>
     <p class="eftg-status" id="eftg-status" aria-live="polite"></p>
-    <div class="eftg-scen">
-      {% include eft-figur-svg.html guide=true %}
-      <div class="eftg-andning" aria-hidden="true"><span>{{ g.andas }}</span></div>
-    </div>
-    <p class="eftg-instruktion" id="eftg-instruktion"></p>
-    <div class="eftg-takt" id="eftg-takt" aria-hidden="true">{% for i in (1..10) %}<span></span>{% endfor %}</div>
-    <div class="eftg-knappar">
-      <button type="button" class="eftg-lank" id="eftg-paus" aria-pressed="false">{{ g.knack_paus }}</button>
-      <button type="button" class="eftg-lank" id="eftg-nasta">{{ g.knack_nasta }}</button>
+    <div class="eftg-raster">
+      <div class="eftg-scen">
+        {% include eft-figur-svg.html guide=true %}
+      </div>
+      <div class="eftg-sida">
+        <div class="eftg-orb" aria-hidden="true" data-stilla="{{ g.andas_stilla }}">
+          <div class="eftg-orb-ring"></div>
+          <div class="eftg-orb-kropp"></div>
+          <span class="eftg-orb-in">{{ g.andas_in }}</span>
+          <span class="eftg-orb-ut">{{ g.andas_ut }}</span>
+        </div>
+        <div class="eftg-takt" id="eftg-takt" aria-hidden="true">{% for i in (1..10) %}<span></span>{% endfor %}</div>
+        <p class="eftg-instruktion" id="eftg-instruktion"></p>
+        <div class="eftg-knappar">
+          <button type="button" class="eftg-lank" id="eftg-paus" aria-pressed="false">{{ g.knack_paus }}</button>
+          <button type="button" class="eftg-lank" id="eftg-nasta">{{ g.knack_nasta }}</button>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -49,6 +59,7 @@
     </div>
     <button type="button" class="cta" id="eftg-visa">{{ g.klar_knapp }}</button>
     <div class="eftg-resultat" id="eftg-resultat" aria-live="polite" hidden>
+      <div class="eftg-diff" aria-hidden="true"><span id="eftg-diff-fore"></span><span class="eftg-diff-pil">→</span><span id="eftg-diff-efter"></span></div>
       <p id="eftg-resultat-text"></p>
       <p>{{ g.cta_text }}</p>
       <p class="eftg-resultat-knappar">

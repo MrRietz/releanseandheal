@@ -25,6 +25,9 @@
   var instr = root.querySelector('#eftg-instruktion');
   var takt = root.querySelector('#eftg-takt');
   var prickar = takt.querySelectorAll('span');
+  var steg = root.querySelectorAll('.eftg-steg span');
+  var diffFore = root.querySelector('#eftg-diff-fore');
+  var diffEfter = root.querySelector('#eftg-diff-efter');
   var paus = root.querySelector('#eftg-paus');
   var nasta = root.querySelector('#eftg-nasta');
   var visa = root.querySelector('#eftg-visa');
@@ -57,6 +60,10 @@
   }
   function markera() {
     var aktiv = ORDNING[index];
+    steg.forEach(function (s, i) {
+      s.classList.toggle('klar', i < index);
+      s.classList.toggle('aktiv', i === index);
+    });
     Object.keys(punkter).forEach(function (slug) {
       var klar = ORDNING.indexOf(slug) < index;
       punkter[slug].classList.toggle('aktiv', slug === aktiv);
@@ -148,6 +155,9 @@
     var efter = +efterIn.value;
     var text = efter < fore ? T.resultat_lagre : (efter === fore ? T.resultat_samma : T.resultat_hogre);
     resultatText.textContent = fyll(text, { fore: fore, efter: efter });
+    diffFore.textContent = fore;
+    diffEfter.textContent = efter;
+    diffEfter.className = efter < fore ? 'battre' : (efter === fore ? 'samma' : 'hogre');
     resultat.hidden = false;
     visa.hidden = true;
   });
