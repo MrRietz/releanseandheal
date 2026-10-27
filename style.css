@@ -1183,20 +1183,48 @@ main > ul {
   fill: rgba(224, 148, 84, 0.4);
   stroke: #d9803f;
   stroke-width: 1.6;
-  pointer-events: all;
-  cursor: pointer;
-  animation: eftg-puls 1.6s ease-in-out infinite;
 }
 .eftg-dot.puls {
-  animation: eftg-tryck 0.3s ease-out;
+  animation: eftg-slag 0.5s ease-out;
 }
-@keyframes eftg-puls {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.35); }
+.eftg-ring {
+  fill: none;
+  stroke: #d9803f;
+  stroke-width: 1.4;
+  opacity: 0;
+  pointer-events: none;
+  transform-box: fill-box;
+  transform-origin: center;
 }
-@keyframes eftg-tryck {
-  0% { transform: scale(1.7); }
+.eftg-ring.puls {
+  animation: eftg-ring 1s ease-out;
+}
+@keyframes eftg-slag {
+  0% { transform: scale(1.5); }
   100% { transform: scale(1); }
+}
+@keyframes eftg-ring {
+  0% { transform: scale(1); opacity: 0.85; }
+  100% { transform: scale(3.2); opacity: 0; }
+}
+.eftg-takt {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 4px 0 14px 0;
+}
+.eftg-takt span {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid #b7d0b5;
+  background: transparent;
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+.eftg-takt span.fylld {
+  background: #3d7167;
+  border-color: #3d7167;
+  transform: scale(1.15);
 }
 .eftg-andning {
   text-align: center;
@@ -1224,11 +1252,6 @@ main > ul {
   align-items: center;
   gap: 10px;
 }
-.eftg-knacka {
-  min-width: 220px;
-  padding: 16px 28px;
-  font-size: 1.2rem;
-}
 .eftg-lank {
   border: none;
   background: none;
@@ -1249,10 +1272,13 @@ main > ul {
   gap: 14px;
 }
 @media (prefers-reduced-motion: reduce) {
-  .eftg-dot.aktiv,
   .eftg-dot.puls,
+  .eftg-ring.puls,
   .eftg-andning span {
     animation: none;
+  }
+  .eftg-takt span {
+    transition: none;
   }
 }
 

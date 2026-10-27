@@ -30,8 +30,9 @@
       <div class="eftg-andning" aria-hidden="true"><span>{{ g.andas }}</span></div>
     </div>
     <p class="eftg-instruktion" id="eftg-instruktion"></p>
+    <div class="eftg-takt" id="eftg-takt" aria-hidden="true">{% for i in (1..10) %}<span></span>{% endfor %}</div>
     <div class="eftg-knappar">
-      <button type="button" class="cta eftg-knacka" id="eftg-knacka">{{ g.knack_knapp }} <span id="eftg-rakna" aria-hidden="true"></span></button>
+      <button type="button" class="eftg-lank" id="eftg-paus" aria-pressed="false">{{ g.knack_paus }}</button>
       <button type="button" class="eftg-lank" id="eftg-nasta">{{ g.knack_nasta }}</button>
     </div>
   </section>
