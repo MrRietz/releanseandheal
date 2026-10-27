@@ -7,4 +7,17 @@ url: "https://releaseandheal.se" # set to your custom domain
 theme: minima
 lang: sv
 
+# Metodtexterna ligger som en samling filer i mappen _metoder
+collections:
+  metoder:
+    output: false
 
+# Svenska citattecken: ”text”
+kramdown:
+  smart_quotes: lsquo,rsquo,rdquo,rdquo
+
+# Hjälptexter för redigering ska inte bli sidor på sajten
+exclude:
+  - REDIGERA.md
+  - Gemfile
+  - Gemfile.lock

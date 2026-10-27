@@ -1,0 +1,66 @@
+- namn: Utforskande samtal
+  tid: '30 min'
+  pris: Gratis
+  boka: utforskande-samtal
+  rabatt: 0
+- namn: NLP-coaching & hypnos
+  tid: '75–90 min'
+  pris: 1 295 kr
+  boka: nlp-hypnos
+  rabatt: 20
+- namn: Livscoaching
+  tid: '75–90 min'
+  pris: 1 295 kr
+  boka: livscoaching
+  rabatt: 10
+- namn: Medial vägledning
+  tid: '30 min'
+  pris: 500 kr
+  boka: medial-30
+  rabatt: 10
+- namn: Medial vägledning
+  tid: '60 min'
+  pris: 850 kr
+  boka: medial-60
+  rabatt: 10
+- namn: Emotion Code – paket (nya klienter)
+  tid: '3 sessioner'
+  pris: 2 400 kr
+  boka: emotion-code-paket-nya
+  rabatt: 20
+- namn: Emotion Code (digitalt möte)
+  tid: '55 min'
+  pris: 995 kr
+  boka: emotion-code-digitalt
+  rabatt: 20
+- namn: Emotion Code (digitalt möte) – paket
+  tid: '5 sessioner'
+  pris: 4 000 kr
+  boka: emotion-code-digitalt-paket
+  rabatt: 20
+- namn: Emotion Code avlägsna hjärtmuren
+  tid: ''
+  pris: 2 200 kr
+  boka: emotion-code-hjartmuren
+  rabatt: 20
+- namn: Reiki
+  tid: '60 min'
+  pris: 850 kr
+  boka: reiki
+  rabatt: 10
+- namn: Reiki – paket
+  tid: '3 sessioner'
+  pris: 1 900 kr
+  boka: reiki-paket
+  rabatt: 10
+- namn: 12 veckors program för utmattade
+  tid: ''
+  pris: Kontakta mig
+  boka: tolv-veckors-program
+  rabatt: 10
+- namn: EFT – kontakta mig
+  tid: ''
+  pris: ''
+  boka: eft
+  rabatt: 0
+  tabell: nej

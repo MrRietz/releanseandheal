@@ -1,0 +1,14 @@
+<table class="tjanster-table">
+  <thead>
+    <tr>
+      <th>Tjänst</th>
+      <th>Tid</th>
+      <th>Pris</th>
+      <th><span class="visually-hidden">Boka</span></th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for t in site.data.tjanster %}{% unless t.tabell == "nej" %}<tr><td data-label="Tjänst">{{ t.namn }}</td><td data-label="Tid">{{ t.tid }}</td><td data-label="Pris">{{ t.pris }}</td><td data-label="" class="boka-cell"><a class="cta" href="{{ site.baseurl }}/bokning/?tjanst={{ t.boka }}">Boka</a></td></tr>
+  {% endunless %}{% endfor %}
+  </tbody>
+</table>

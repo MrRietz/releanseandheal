@@ -941,6 +941,123 @@ footer {
     padding: 22px 18px 20px 18px;
   }
 }
+/* Sidor skrivna i Markdown */
+.foto-rad {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+  margin: 2em 0;
+}
+.foto-rad img {
+  max-width: 240px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(78, 52, 46, 0.09);
+}
+.foto-text {
+  flex: 1;
+  min-width: 240px;
+}
+.centrerad {
+  text-align: center;
+  margin: 2em 0;
+}
+.ingress {
+  font-size: 1.1em;
+  color: #7c5c3e;
+  margin-bottom: 1em;
+}
+img.centrerad-bild {
+  display: block;
+  max-width: 420px;
+  width: 100%;
+  margin: 24px auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+}
+.liten-text {
+  font-size: 0.95em;
+  color: #7c5c3e;
+}
+main > ul {
+  margin: 1em 0 2em 0;
+  padding-left: 1.2em;
+  color: #7c5c3e;
+  font-size: 1.08em;
+  line-height: 2em;
+}
+
+/* Tjänstetabell */
+.tjanster-table {
+  width: 100%;
+  max-width: 700px;
+  margin: 2em auto;
+  border-collapse: separate;
+  border-spacing: 0 16px;
+}
+.tjanster-table thead tr {
+  background: #f6d2a5;
+  color: #7c5c3e;
+}
+.tjanster-table th {
+  padding: 18px 12px;
+  text-align: left;
+  font-size: 1.08em;
+}
+.tjanster-table td {
+  padding: 16px 12px;
+  background: #fff;
+  border-radius: 12px;
+}
+.tjanster-table td.boka-cell {
+  text-align: right;
+}
+.tjanster-table td .cta {
+  padding: 8px 18px;
+  font-size: 0.95em;
+}
+
+/* Bokningsformulär */
+.bokningsformular {
+  max-width: 400px;
+  margin: 0 auto 2em auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bokningsformular select,
+.bokningsformular input[type="text"],
+.bokningsformular input[type="email"],
+.bokningsformular textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #f6d2a5;
+}
+.bokningsformular select {
+  background: #fff;
+  color: #7c5c3e;
+}
+.bokningsformular textarea {
+  min-height: 100px;
+}
+.bokningsformular button.cta {
+  width: 100%;
+  font-size: 1.1em;
+}
+
+/* Punktlistor i metodtexterna får ett hjärta som punkt */
+.metod-dialog-text > ul,
+.metod .lasmer > ul {
+  list-style: none;
+  padding-left: 0;
+}
+.metod-dialog-text > ul li::before,
+.metod .lasmer > ul li::before {
+  content: "\2661\00a0";
+  color: #7c5c3e;
+}
+
 .trygghet {
   background: #fdf3e4;
   border-radius: 14px;

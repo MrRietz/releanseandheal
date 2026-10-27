@@ -1,0 +1,13 @@
+{%- comment -%} Ett metodkort. Texterna ligger i filerna i mappen _metoder. {%- endcomment -%}
+<div class="metod{% if include.m.farg == 'gron' %} metod-bred{% endif %}">
+  <h3>{{ include.m.titel }}</h3>
+  {% if include.m.undertitel %}<p class="metod-tagline">{{ include.m.undertitel }}</p>{% endif %}
+  <p>{{ include.m.ingress }}</p>
+  <details class="lasmer">
+    <summary>Läs mer<span class="visually-hidden"> om {{ include.m.titel }}</span></summary>
+    {% if include.m.infografik %}{% include eft-infografik.html %}{% endif %}
+    {{ include.m.content | markdownify }}
+  </details>
+  {% if include.m.pris %}<p class="meta">{{ include.m.pris }}</p>{% endif %}
+  <a class="cta" href="{{ site.baseurl }}/bokning/?tjanst={{ include.m.boka }}">{{ include.m.knapp | default: 'Boka' }}</a>
+</div>

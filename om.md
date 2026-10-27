@@ -5,52 +5,50 @@ permalink: /om-mig/
 page_id: about
 ---
 
-<h2>Om mig</h2>
+## Om mig
 
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:32px;margin-bottom:2em;">
-  <img src="{{ site.baseurl }}/public/img/IMG-20250305-WA0000.jpg" alt="Elisabeth Rietz" style="max-width:220px;border-radius:16px;box-shadow:0 2px 12px rgba(78,52,46,0.09);">
-  <div style="flex:1;min-width:220px;">
-    <p>Jag heter Elisabeth Rietz och har en passion för självutveckling och mötet med människor. Min egen inre resa började efter utmattningssyndrom och har lett till ett liv där jag följer hjärtat och intuitionen. Jag har arbetat med människor hela mitt yrkesliv – som lärare, forskare och terapeut.</p>
-    <p>Jag är certifierad Emotion Code Practitioner, diplomerad Reiki Master, holistisk återhämtningsterapeut samt utbildad och diplomerad medium. Min kärna är healing och samtal, och jag erbjuder även medial vägledning och privata sittningar.</p>
-    <p>Min passion är att hjälpa dig leva mjukare och hitta din inre styrka. Tillsammans arbetar vi med både kropp, själ och tanke för att skapa förändring och läkning.</p>
-  </div>
+<div class="foto-rad" markdown="1">
+<img src="{{ site.baseurl }}/public/img/IMG-20250305-WA0000.jpg" alt="Elisabeth Rietz">
+<div class="foto-text" markdown="1">
+
+Jag heter Elisabeth Rietz och har en passion för självutveckling och mötet med människor. Min egen inre resa började efter utmattningssyndrom och har lett till ett liv där jag följer hjärtat och intuitionen. Jag har arbetat med människor hela mitt yrkesliv – som lärare, forskare och terapeut.
+
+Jag är certifierad Emotion Code Practitioner, diplomerad Reiki Master, holistisk återhämtningsterapeut samt utbildad och diplomerad medium. Min kärna är healing och samtal, och jag erbjuder även medial vägledning och privata sittningar.
+
+Min passion är att hjälpa dig leva mjukare och hitta din inre styrka. Tillsammans arbetar vi med både kropp, själ och tanke för att skapa förändring och läkning.
+
+</div>
 </div>
 
-<h2>Vad kan du få hjälp med?</h2>
+## Vad kan du få hjälp med?
 
-<ul style="margin: 1em 0 2em 0; padding-left: 1.2em; color: #7c5c3e; font-size: 1.08em; line-height: 2.1em;">
-  <li>Nå din fulla potential</li>
-  <li>Komma vidare med det du sitter fast i</li>
-  <li>Stärka självkänsla och självmedkänsla</li>
-  <li>Hantera stress och oro</li>
-  <li>Få kontakt med ditt inre barn</li>
-  <li>Sortera tankar och känslor</li>
-  <li>Träna på gränser och självledarskap</li>
-  <li>Frigöra dig från skam och skuld</li>
-  <li>Hitta återhämtning som passar dig</li>
-</ul>
+- Nå din fulla potential
+- Komma vidare med det du sitter fast i
+- Stärka självkänsla och självmedkänsla
+- Hantera stress och oro
+- Få kontakt med ditt inre barn
+- Sortera tankar och känslor
+- Träna på gränser och självledarskap
+- Frigöra dig från skam och skuld
+- Hitta återhämtning som passar dig
 
-<h2>Utbildning & kompetens</h2>
+## Utbildning & kompetens
 
-<ul style="margin: 1em 0 2em 0; padding-left: 1.2em; color: #7c5c3e; font-size: 1.08em; line-height: 2em;">
-  <li>Certifierad NLP Practitioner</li>
-  <li>Diplomerad hypnoterapeut</li>
-  <li>Certifierad Emotion Code Practitioner</li>
-  <li>Reiki Master</li>
-  <li>Diplomerad Holistisk Återhämtningsterapeut</li>
-  <li>EFT utövare</li>
-  <li>Diplomerad i Modernt mediumskap</li>
-  <li>Forskarutbildning i pedagogik</li>
-  <li>Magister i matematikdidaktik</li>
-  <li>Lärarutbildning, förskoleklass–grundskolan matematik och naturvetenskap</li>
-  <li>Pågående utbildning: Livscoach</li>
-</ul>
+- Certifierad NLP Practitioner
+- Diplomerad hypnoterapeut
+- Certifierad Emotion Code Practitioner
+- Reiki Master
+- Diplomerad Holistisk Återhämtningsterapeut
+- EFT utövare
+- Diplomerad i Modernt mediumskap
+- Forskarutbildning i pedagogik
+- Magister i matematikdidaktik
+- Lärarutbildning, förskoleklass–grundskolan matematik och naturvetenskap
+- Pågående utbildning: Livscoach
 
-<h2>Övrigt</h2>
+## Övrigt
 
-<ul style="margin: 1em 0 2em 0; padding-left: 1.2em; color: #7c5c3e; font-size: 1.08em; line-height: 2em;">
-  <li>LifeSpider System™ Coachad och Selfcoaching program</li>
-  <li>Igångsättare av Självhjälpsgrupper genom Självhjälphuset Solkatten Göteborg</li>
-</ul>
+- LifeSpider System™ Coachad och Selfcoaching program
+- Igångsättare av Självhjälpsgrupper genom Självhjälphuset Solkatten Göteborg
 
-<p><strong>Varmt välkommen!</strong></p>
+**Varmt välkommen!**

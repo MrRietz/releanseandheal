@@ -1,0 +1,6 @@
+<div class="faq">
+{% for f in site.data.vanliga-fragor %}  <details>
+    <summary>{{ f.fraga }}</summary>
+    <p>{{ f.svar }}</p>
+  </details>
+{% endfor %}</div>

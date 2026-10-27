@@ -1,0 +1,14 @@
+<form class="bokningsformular" data-offer-form action="https://formspree.io/f/xwpnrgzn" method="POST">
+  <div class="offer-notice" data-offer hidden>
+    <strong>✓ Mässerbjudande aktiverat</strong>
+  </div>
+  <input type="hidden" name="Mässerbjudande" value="Nej" disabled>
+  <input type="hidden" name="_subject" value="Bokningsförfrågan från hemsidan">
+  <select name="Tjänst" id="service-field" required>
+    {% include service-options.html %}
+  </select>
+  <input type="text" name="Namn" placeholder="Namn" required>
+  <input type="email" name="E-post" placeholder="E-post" required>
+  <textarea name="Meddelande" placeholder="Meddelande" required></textarea>
+  <button type="submit" class="cta">Skicka bokningsförfrågan</button>
+</form>

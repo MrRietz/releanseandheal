@@ -1,0 +1,57 @@
+<div class="carousel-container">
+  <div class="carousel">
+    {% for o in site.data.omdomen %}<img src="{{ site.baseurl }}{{ o.bild }}" alt="{{ o.alt | escape }}" class="carousel-image">
+    {% endfor %}
+  </div>
+  <button class="carousel-btn prev" aria-label="Föregående omdöme">&#10094;</button>
+  <button class="carousel-btn next" aria-label="Nästa omdöme">&#10095;</button>
+  <div class="carousel-dots" role="group" aria-label="Välj omdöme"></div>
+</div>
+
+<script>
+(function () {
+  var box = document.querySelector('.carousel-container');
+  var images = box.querySelectorAll('.carousel-image');
+  var dotsEl = box.querySelector('.carousel-dots');
+  var total = images.length;
+  var current = 0;
+  var paused = false;
+  var dots = [];
+
+  function show(idx) {
+    current = (idx + total) % total;
+    images.forEach(function (img, i) { img.style.display = i === current ? 'block' : 'none'; });
+    dots.forEach(function (d, i) {
+      d.classList.toggle('active', i === current);
+      d.setAttribute('aria-current', i === current ? 'true' : 'false');
+    });
+  }
+
+  images.forEach(function (_, i) {
+    var d = document.createElement('button');
+    d.type = 'button';
+    d.className = 'carousel-dot';
+    d.setAttribute('aria-label', 'Visa omdöme ' + (i + 1) + ' av ' + total);
+    d.onclick = function () { show(i); };
+    dotsEl.appendChild(d);
+    dots.push(d);
+  });
+
+  box.querySelector('.carousel-btn.next').onclick = function () { show(current + 1); };
+  box.querySelector('.carousel-btn.prev').onclick = function () { show(current - 1); };
+
+  // Pausa medan någon läser: hover, tangentbordsfokus och touch.
+  box.addEventListener('mouseenter', function () { paused = true; });
+  box.addEventListener('mouseleave', function () { paused = false; });
+  box.addEventListener('focusin', function () { paused = true; });
+  box.addEventListener('focusout', function () { paused = false; });
+  box.addEventListener('touchstart', function () { paused = true; }, { passive: true });
+
+  show(0);
+
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduceMotion) {
+    setInterval(function () { if (!paused) show(current + 1); }, 20000);
+  }
+})();
+</script>
