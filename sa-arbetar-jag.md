@@ -136,10 +136,11 @@ page_id: methods
     <p>EFT Tapping (Emotional Freedom Technique) är en psykologisk akupressurmetod där du knackar lätt med fingertopparna på olika meridianpunkter på kroppen samtidigt som du fokuserar på en känsla eller ett problem.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om EFT</span></summary>
-      <img class="metod-bild" src="{{ site.baseurl }}/public/img/eft-tapping.jpg" alt="EFT Tapping: illustration av knackpunkterna i ansikte och på kroppen" width="502" height="753" loading="lazy">
+      <a href="{{ site.baseurl }}/public/img/eft-tapping-stor.jpg" target="_blank" rel="noopener" title="Klicka för att förstora"><img class="metod-bild" src="{{ site.baseurl }}/public/img/eft-tapping.jpg" alt="EFT Tapping: illustration av knackpunkterna i ansikte och på kroppen" width="502" height="753" loading="lazy"></a>
       <p>EFT Tapping (Emotional Freedom Technique) är en psykologisk akupressurmetod som kombinerar element från traditionell kinesisk medicin och modern psykologi. Du knackar lätt med fingertopparna på olika meridianpunkter på kroppen samtidigt som du har mental fokus på en särskild negativ känsla eller problem. Det kan vara allt ifrån stress och ångest till fysisk smärta eller negativa tankemönster.</p>
       <p>Syftet är att återställa kroppens energibalans och minska eller eliminera obehagliga känslor. Metoden är enkel och kan utföras nästan var som helst och när som helst, och det krävs inga verktyg eller särskilda förberedelser. Det är en effektiv metod som många människor använder och det har blivit ett populärt verktyg inom stresshantering och personlig utveckling.</p>
     </details>
+    <a class="cta" href="{{ site.baseurl }}/bokning/?tjanst=eft">Kontakta mig</a>
   </div>
 </div>
 
@@ -149,3 +150,27 @@ page_id: methods
   Osäker på vad som passar dig? Boka ett gratis utforskande samtal på 30 minuter.<br><br>
   <a href="{{ site.baseurl }}/bokning/?tjanst=utforskande-samtal" class="cta">Boka utforskande samtal</a>
 </p>
+
+<script>
+(function () {
+  var link = document.querySelector('.metod-bred a[href$="eft-tapping-stor.jpg"]');
+  if (!link || !window.HTMLDialogElement) return;
+  var thumb = link.querySelector('img');
+  var dlg = document.createElement('dialog');
+  dlg.className = 'bildvisare';
+  dlg.setAttribute('aria-label', 'EFT Tapping, förstorad bild');
+  var close = document.createElement('button');
+  close.type = 'button';
+  close.className = 'bildvisare-stang';
+  close.setAttribute('aria-label', 'Stäng');
+  close.textContent = '×';
+  var big = document.createElement('img');
+  big.src = link.href;
+  big.alt = thumb.alt;
+  dlg.appendChild(close);
+  dlg.appendChild(big);
+  document.body.appendChild(dlg);
+  link.addEventListener('click', function (e) { e.preventDefault(); dlg.showModal(); });
+  dlg.addEventListener('click', function () { dlg.close(); });
+})();
+</script>

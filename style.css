@@ -548,7 +548,6 @@ footer {
 
 /* Metodkort (Så arbetar jag) */
 .metoder {
-  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -561,6 +560,13 @@ footer {
   padding: 22px;
   box-shadow: 0 1px 6px rgba(78, 52, 46, 0.07);
   box-sizing: border-box;
+}
+.metod {
+  display: flex;
+  flex-direction: column;
+}
+.metod .cta {
+  align-self: flex-start;
 }
 .metod h3 {
   margin: 0 0 8px 0;
@@ -576,7 +582,7 @@ footer {
 
 /* Fördjupning i metodkort och trygghetsruta */
 .metod .lasmer {
-  margin: 0 0 12px 0;
+  margin: auto 0 12px 0;
 }
 .metod .lasmer summary {
   cursor: pointer;
@@ -609,18 +615,16 @@ footer {
 }
 .metod-bild {
   display: block;
-  max-width: min(100%, 420px);
+  max-width: min(100%, 502px);
   height: auto;
   margin: 18px auto 22px auto;
   border-radius: 18px;
   border: 6px solid #fff;
   box-shadow: 0 10px 30px rgba(61, 113, 103, 0.22), 0 2px 6px rgba(78, 52, 46, 0.1);
-  transform: rotate(-1.2deg);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
 }
 .metod-bild:hover {
-  transform: rotate(0deg) scale(1.02);
-  box-shadow: 0 14px 36px rgba(61, 113, 103, 0.28), 0 3px 8px rgba(78, 52, 46, 0.12);
+  box-shadow: 0 14px 36px rgba(61, 113, 103, 0.3), 0 3px 8px rgba(78, 52, 46, 0.12);
 }
 .metod-bred:has(.lasmer[open]) {
   flex-basis: 100%;
@@ -699,12 +703,52 @@ footer {
   .metod .lasmer summary {
     transition: none;
   }
-  .metod-bild {
-    transform: none;
-  }
   .metod .lasmer[open] > :not(summary) {
     animation: none;
   }
+}
+/* Förstoringsvy för EFT-bilden */
+.metod-bild {
+  cursor: zoom-in;
+}
+.metod-bred .lasmer > a {
+  position: relative;
+  z-index: 1;
+}
+.bildvisare {
+  border: none;
+  padding: 0;
+  background: transparent;
+  max-width: 96vw;
+  max-height: 96vh;
+  overflow: visible;
+}
+.bildvisare::backdrop {
+  background: rgba(30, 40, 35, 0.85);
+}
+.bildvisare img {
+  display: block;
+  max-width: 96vw;
+  max-height: 94vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  cursor: zoom-out;
+}
+.bildvisare-stang {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  color: #3d7167;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 .trygghet {
   background: #fdf3e4;
