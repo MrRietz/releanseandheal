@@ -41,10 +41,13 @@ Min passion är att hjälpa dig leva mjukare och hitta din inre styrka. Tillsamm
 - Diplomerad Holistisk Återhämtningsterapeut
 - EFT utövare
 - Diplomerad i Modernt mediumskap
+- Holistisk livscoach (pågående utbildning)
+
+## Akademiska utbildningar
+
 - Forskarutbildning i pedagogik
 - Magister i matematikdidaktik
 - Lärarutbildning, förskoleklass–grundskolan matematik och naturvetenskap
-- Pågående utbildning: Livscoach
 
 ## Övrigt
 
