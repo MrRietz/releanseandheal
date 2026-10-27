@@ -198,3 +198,69 @@ page_id: methods
   Osäker på vad som passar dig? Boka ett gratis utforskande samtal på 30 minuter.<br><br>
   <a href="{{ site.baseurl }}/bokning/?tjanst=utforskande-samtal" class="cta">Boka utforskande samtal</a>
 </p>
+
+<script>
+(function () {
+  if (!window.HTMLDialogElement) return;
+  document.querySelectorAll('.metod').forEach(function (card) {
+    var det = card.querySelector('details.lasmer');
+    if (!det) return;
+    var summary = det.querySelector('summary');
+    var title = card.querySelector('h3').textContent;
+    var tagline = card.querySelector('.metod-tagline');
+
+    var dlg = document.createElement('dialog');
+    dlg.className = 'metod-dialog' + (card.classList.contains('metod-bred') ? ' metod-dialog-gron' : '');
+    dlg.setAttribute('aria-label', title);
+    var inner = document.createElement('div');
+    inner.className = 'metod-dialog-inre';
+    var close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'metod-dialog-stang';
+    close.setAttribute('aria-label', 'Stäng');
+    close.textContent = '×';
+    var head = document.createElement('h3');
+    head.textContent = title;
+    var body = document.createElement('div');
+    body.className = 'metod-dialog-text';
+    var foot = document.createElement('div');
+    foot.className = 'metod-dialog-fot';
+    inner.appendChild(close);
+    inner.appendChild(head);
+    if (tagline) {
+      var sub = document.createElement('p');
+      sub.className = 'metod-tagline';
+      sub.textContent = tagline.textContent;
+      inner.appendChild(sub);
+    }
+    var lead = card.querySelector(':scope > p:not(.metod-tagline):not(.meta)');
+    if (lead) {
+      var ingress = document.createElement('p');
+      ingress.className = 'metod-dialog-ingress';
+      ingress.textContent = lead.textContent;
+      inner.appendChild(ingress);
+    }
+    inner.appendChild(body);
+    var meta = card.querySelector('.meta');
+    var cta = card.querySelector('.cta');
+    if (meta) foot.appendChild(meta.cloneNode(true));
+    if (cta) foot.appendChild(cta.cloneNode(true));
+    if (foot.childNodes.length) inner.appendChild(foot);
+    dlg.appendChild(inner);
+    document.body.appendChild(dlg);
+
+    summary.addEventListener('click', function (e) {
+      e.preventDefault();
+      Array.prototype.slice.call(det.children).forEach(function (n) {
+        if (n !== summary) body.appendChild(n);
+      });
+      dlg.showModal();
+    });
+    dlg.addEventListener('close', function () {
+      Array.prototype.slice.call(body.childNodes).forEach(function (n) { det.appendChild(n); });
+    });
+    close.addEventListener('click', function () { dlg.close(); });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) dlg.close(); });
+  });
+})();
+</script>
