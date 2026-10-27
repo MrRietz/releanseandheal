@@ -548,6 +548,7 @@ footer {
 
 /* Metodkort (Så arbetar jag) */
 .metoder {
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -571,6 +572,60 @@ footer {
 .metod .meta {
   color: #7c5c3e;
   font-weight: 600;
+}
+
+/* Fördjupning i metodkort och trygghetsruta */
+.metod .lasmer {
+  margin: 0 0 12px 0;
+}
+.metod .lasmer summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #7c5c3e;
+}
+.metod .lasmer h4 {
+  margin: 14px 0 6px 0;
+  color: #7c5c3e;
+}
+.metod .lasmer p,
+.metod .lasmer ul,
+.metod .lasmer ol {
+  margin: 0 0 10px 0;
+}
+.metod .lasmer ol {
+  padding-left: 1.3em;
+}
+.metod .lasmer .kalla {
+  font-size: 0.9em;
+  font-style: italic;
+}
+.hjartlista {
+  list-style: none;
+  padding-left: 0;
+}
+.hjartlista li::before {
+  content: "\2661\00a0";
+  color: #7c5c3e;
+}
+.metod-bild {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0 14px 0;
+  border-radius: 12px;
+}
+.trygghet {
+  background: #fdf3e4;
+  border-radius: 14px;
+  padding: 16px 22px;
+  margin: 1.5em 0;
+  color: #7c5c3e;
+}
+.trygghet p {
+  margin: 0 0 10px 0;
+}
+.trygghet p:last-child {
+  margin-bottom: 0;
 }
 
 /* Fast "Boka tid"-knapp på mobil */

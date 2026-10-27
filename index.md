@@ -6,21 +6,7 @@ page_id: home
 
 <h2>Välkommen till Release & Heal</h2>
 
-<p>Så fint att du hittat hit! Jag som driver Release & Heal heter Elisabeth Rietz och jag är coach, terapeut, healer & medium. Här erbjuds du:</p>
-
-<ul style="margin: 1em 0 2em 0; padding-left: 1.2em; color: #7c5c3e; font-size: 1.1em; line-height: 2.2em;">
-  <li>Hypnoterapi</li>
-  <li>NLP-coaching</li>
-  <li>Medial vägledning</li>
-  <li>Healing med Reiki & Emotion code</li>
-  <li>Livscoaching</li>
-  <li>Helande samtal</li>
-  <li>Återhämtningsterapi</li>
-  <li>Mindfulness</li>
-  <li>Meditation</li>
-  <li>Personlig och andlig utveckling</li>
-  <li>Reikikurser (kommande)</li>
-</ul>
+<p>Så fint att du hittat hit! Jag som driver Release & Heal heter Elisabeth Rietz och jag är coach, terapeut, healer & medium.</p>
 
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:32px;margin:2em 0;">
   <img src="public/img/elisabeth1.jpg" alt="Elisabeth Rietz" style="max-width:260px;width:100%;border-radius:16px;box-shadow:0 2px 12px rgba(78,52,46,0.09);">
@@ -33,6 +19,11 @@ page_id: home
 
     <p><strong>Varmt välkommen!</strong></p>
   </div>
+</div>
+
+<div class="trygghet">
+  <p>Jag arbetar under tystnadsplikt och bemöter varje klient med varsamhet och respekt och det som kommer upp under en behandling med mig är helt konfidentiellt. Jag är medlem och försäkrad via Friskvårdsförbundet samt medlem i Reikiförbundet och följer de riktlinjer som finns.</p>
+  <p>Betalning sker innan behandling via swish eller bankkonto och du får uppgifterna i samband med att vi bokar in en tid. Jag innehar F-skattsedel. I samband med din betalning så godkänner du Terms &amp; Conditions.</p>
 </div>
 
 <h2>Så går det till</h2>
