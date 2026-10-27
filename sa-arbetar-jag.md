@@ -16,7 +16,7 @@ page_id: methods
 <div class="metoder">
   <div class="metod">
     <h3>NLP-coaching</h3>
-    <p>NLP (neurolingvistisk programmering) handlar om hur våra tankemönster, vårt språk och våra beteenden hänger ihop. I coaching använder vi bland annat omformulering av perspektiv och ankring, där du kopplar ett önskat känsloläge till en signal. Målet är att sätta tydliga mål och förändra mönster som inte hjälper dig.</p>
+    <p>NLP (Neuro-Lingvistisk Programmering) handlar om samspelet mellan våra tankar, vårt språk och våra beteenden. Som utbildad NLP-coach använder jag bland annat visualisering, språkliga verktyg och mental träning när vi utforskar dina tankemönster och hittar nya perspektiv och möjligheter.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om NLP-coaching</span></summary>
       <h4>NLP – förstå dina tankar och skapa nya möjligheter</h4>
@@ -39,7 +39,7 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Hypnoterapi</h3>
-    <p>Hypnos är ett tillstånd av fokuserad uppmärksamhet och djup avslappning. Du är vaken och har kontrollen hela tiden. I hypnoterapi använder vi tillståndet för att utforska tankar, minnen och mönster som ligger under ytan. Jag förklarar hur det går till innan vi börjar.</p>
+    <p>Hypnos är en väg till mental avslappning, inre utforskande och personlig utveckling. Jag guidar dig genom en inre resa med fokus på avslappning och mental fokusering. Du är hela tiden delaktig utan att behöva prestera, och jag förklarar hur det går till innan vi börjar.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Hypnoterapi</span></summary>
       <h4>Hypnos – en inre resa mot nya möjligheter</h4>
@@ -61,7 +61,7 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Emotion Code</h3>
-    <p>Emotion Code är en metod utvecklad av Bradley Nelson. Enligt metoden kan olösta känslor "fastna" i kroppen och påverka hur vi mår. Med hjälp av muskeltestning tar vi reda på vilka känslor som finns kvar och släpper dem med enkla tekniker. Behandlingen fungerar bra på distans, och efteråt får du en rapport över vilka emotioner som frigjorts.</p>
+    <p>Emotion Code är en metod utvecklad av Dr. Bradley Nelson. Enligt metoden kan olösta känslor "fastna" i kroppen och påverka hur vi mår. Med kinesiologisk muskeltestning identifierar jag vilka känslor som sitter fast och frigör dem. Du behöver inte prata om eller återuppleva gamla trauman. Behandlingen fungerar bra på distans, och efteråt får du en rapport över vilka emotioner som frigjorts.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Emotion Code</span></summary>
       <h4>Emotion Code – släpp ditt emotionella bagage</h4>
@@ -81,7 +81,7 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Hjärtmuren</h3>
-    <p>Hjärtmuren är ett begrepp inom Emotion Code. Det beskriver ett skyddande lager runt hjärtat som vi omedvetet bygger upp efter smärtsamma upplevelser. Muren skyddar oss, men kan också göra det svårare att ge och ta emot kärlek. I behandlingen arbetar vi med att avlägsna den, steg för steg.</p>
+    <p>Hjärtmuren är en del av Emotion Code. Den har genom livet byggts upp av instängda emotioner som ett skydd mot smärta och sorg, och kan hindra dig från att känna och ta emot kärlek. Processen att ta bort den tar cirka en till två veckor med ett antal sessioner.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Hjärtmuren</span></summary>
       <p>Hjärtmuren är en del av Emotion Coden. De allra flesta människor har en hjärtmur som genom livet byggts upp av instängda emotioner som ett skydd mot smärta och sorg. En hjärtmur kan hindra dig från att leva livet fullt ut och kan påverka dig både fysiskt och emotionellt. Även om du inte har några uttalade problem i ditt liv får du stora fördelar av att avlägsna hjärtmuren. En hjärtmur kan stå i vägen för att känna och ta emot kärlek, försvåra för din intuition att komma fram, kontakten med din själ, din kreativitet, din fulla potential och din självläkande förmåga. Fördelarna med att ta bort hjärtmuren är att när blockeringar i form av stagnerad energi är avlägsnade öppnas det upp för ett nytt flöde av livskraft som påverkar många delar i ditt liv.</p>
@@ -93,7 +93,7 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Reiki</h3>
-    <p>Reiki är en japansk metod för avslappning, grundad av Mikao Usui i början av 1900-talet. Ordet betyder ungefär "universell livsenergi". Jag lägger händerna lätt på eller strax ovanför kroppen medan du vilar. Många upplever lugn och djup avslappning.</p>
+    <p>Reiki är en japansk healingmetod, grundad av Mikao Usui i början av 1900-talet, som handlar om att skapa balans i kropp och sinne. Ordet betyder ungefär "universell livsenergi". Jag använder mjuka handpåläggningar på plats, men erbjuder även distanshealing. Behandlingen är djupt avslappnande.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Reiki</span></summary>
       <h4>Reiki – fyll på med ny livsenergi</h4>
@@ -110,7 +110,7 @@ page_id: methods
   </div>
   <div class="metod">
     <h3>Medial vägledning</h3>
-    <p>Vid medial vägledning delar jag de intryck jag får, i form av bilder, känslor och budskap. Du kan använda dem som underlag för egen reflektion och för att få perspektiv på din livsväg. Det är inte ett facit eller en förutsägelse, du bestämmer själv vad som känns rätt för dig.</p>
+    <p>Vid medial vägledning använder jag orakel- och tarotkort för att öppna upp och förmedla budskap, med ett kort för dåtid, nutid och framtid. Du kan använda dem som underlag för egen reflektion. Det är inte ett facit eller en förutsägelse, du känner själv vad som känns rätt för dig.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om Medial vägledning</span></summary>
       <p>Vid medial vägledning använder jag orakel- och tarotkort för att öppna upp och förmedla budskap. När jag använder korten lägger jag ett kort för dåtid, nutid och framtid och det är alltid lika magiskt hur jag genom dessa kort kan känna in hur klientens liv sett ut, utmaningar som klienten haft, styrkor, hur nutid ser ut och hur dåtid och nutid skapar framtid. Det blir som en magisk väv där jag läser av klienten genom korten och frågor som klienten bär på eller vägval som klienten står inför besvaras och förtydligas utan att frågorna behöver ställas. Helt magiskt! Klienter uttrycker att sittningen med mig sveper in dem i en jordad och trygg stund och att de får ett större perspektiv. Du kan använda dem som underlag för egen reflektion och för att få perspektiv på din livsväg. Det är inte ett facit eller en förutsägelse, du känner själv vad som känns rätt för dig.</p>
