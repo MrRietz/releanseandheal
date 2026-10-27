@@ -1,0 +1,63 @@
+{%- comment -%}
+  EFT-guiden. Texterna finns i _data/eft-guide.yml, logiken i public/js/eft-guide.js.
+{%- endcomment -%}
+{% assign g = site.data.eft-guide %}
+<div class="eftg" id="eft-guide">
+  <noscript><p>Guiden kräver JavaScript. Aktivera det i webbläsaren för att prova övningen.</p></noscript>
+
+  <section class="eftg-skarm" data-skarm="start" hidden>
+    <h3>{{ g.start_rubrik }}</h3>
+    <p>{{ g.start_text }}</p>
+    <div class="eftg-kanslor" role="group" aria-label="{{ g.start_rubrik }}">
+      {% for k in g.kanslor %}<button type="button" class="eftg-chip" aria-pressed="false">{{ k }}</button>
+      {% endfor %}
+    </div>
+    <div class="eftg-skala">
+      <label for="eftg-fore">{{ g.skala_fraga }}</label>
+      <div class="eftg-skala-rad">
+        <input type="range" id="eftg-fore" min="0" max="10" step="1" value="5">
+        <output id="eftg-fore-ut" for="eftg-fore">5</output>
+      </div>
+      <div class="eftg-skala-andar"><span>{{ g.skala_lag }}</span><span>{{ g.skala_hog }}</span></div>
+    </div>
+    <button type="button" class="cta" id="eftg-start" disabled>{{ g.start_knapp }}</button>
+  </section>
+
+  <section class="eftg-skarm" data-skarm="knack" hidden>
+    <p class="eftg-status" id="eftg-status" aria-live="polite"></p>
+    <div class="eftg-scen">
+      {% include eft-figur-svg.html guide=true %}
+      <div class="eftg-andning" aria-hidden="true"><span>{{ g.andas }}</span></div>
+    </div>
+    <p class="eftg-instruktion" id="eftg-instruktion"></p>
+    <div class="eftg-knappar">
+      <button type="button" class="cta eftg-knacka" id="eftg-knacka">{{ g.knack_knapp }} <span id="eftg-rakna" aria-hidden="true"></span></button>
+      <button type="button" class="eftg-lank" id="eftg-nasta">{{ g.knack_nasta }}</button>
+    </div>
+  </section>
+
+  <section class="eftg-skarm" data-skarm="klar" hidden>
+    <h3>{{ g.klar_rubrik }}</h3>
+    <div class="eftg-skala">
+      <label for="eftg-efter">{{ g.klar_fraga }}</label>
+      <div class="eftg-skala-rad">
+        <input type="range" id="eftg-efter" min="0" max="10" step="1" value="5">
+        <output id="eftg-efter-ut" for="eftg-efter">5</output>
+      </div>
+      <div class="eftg-skala-andar"><span>{{ g.skala_lag }}</span><span>{{ g.skala_hog }}</span></div>
+    </div>
+    <button type="button" class="cta" id="eftg-visa">{{ g.klar_knapp }}</button>
+    <div class="eftg-resultat" id="eftg-resultat" aria-live="polite" hidden>
+      <p id="eftg-resultat-text"></p>
+      <p>{{ g.cta_text }}</p>
+      <p class="eftg-resultat-knappar">
+        <a class="cta" href="{{ site.baseurl }}/bokning/?tjanst=utforskande-samtal">{{ g.cta_knapp }}</a>
+        <button type="button" class="eftg-lank" id="eftg-igen">{{ g.ny_runda }}</button>
+      </p>
+      <p class="liten-text">{{ g.friskrivning }}</p>
+    </div>
+  </section>
+
+  <script type="application/json" id="eftg-data">{{ g | jsonify }}</script>
+</div>
+<script src="{{ site.baseurl }}/public/js/eft-guide.js"></script>

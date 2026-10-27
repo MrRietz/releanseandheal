@@ -1,0 +1,26 @@
+{%- comment -%}
+  Figuren med knackpunkter. Används av EFT-infografiken och av EFT-guiden (guide=true).
+  Etiketternas text och placering är kod och ska inte ändras här.
+{%- endcomment -%}
+<svg class="eft-info-svg{% if include.guide %} eftg-svg{% endif %}" viewBox="14 352 270 310" role="img" aria-labelledby="eft-svg-titel">
+        <title id="eft-svg-titel">Knackpunkter för EFT</title>
+        <image href="{{ site.baseurl }}/public/img/eft-figur.jpg" x="14" y="352" width="270" height="310"/>
+        <g class="eft-punkt" data-punkt="topp"><rect class="eft-tag" x="189" y="354.5" width="72" height="17" rx="8.5"/><text class="eft-tag-text" x="194" y="366.8" textLength="62" lengthAdjust="spacingAndGlyphs">Topp av huvudet</text></g>
+        <g class="eft-punkt" data-punkt="ogonbryn"><rect class="eft-tag" x="209" y="387.5" width="49" height="17" rx="8.5"/><text class="eft-tag-text" x="214" y="399.8" textLength="39" lengthAdjust="spacingAndGlyphs">Ögonbryn</text></g>
+        <g class="eft-punkt" data-punkt="sida"><rect class="eft-tag" x="210" y="410.5" width="57" height="17" rx="8.5"/><text class="eft-tag-text" x="215" y="422.8" textLength="47" lengthAdjust="spacingAndGlyphs">Sida av ögat</text></g>
+        <g class="eft-punkt" data-punkt="under-ogat"><rect class="eft-tag" x="210" y="431.5" width="52" height="17" rx="8.5"/><text class="eft-tag-text" x="215" y="443.8" textLength="42" lengthAdjust="spacingAndGlyphs">Under ögat</text></g>
+        <g class="eft-punkt" data-punkt="nasa"><rect class="eft-tag" x="211" y="452.5" width="59" height="17" rx="8.5"/><text class="eft-tag-text" x="216" y="464.8" textLength="49" lengthAdjust="spacingAndGlyphs">Under näsan</text></g>
+        <g class="eft-punkt" data-punkt="mun"><rect class="eft-tag" x="210" y="473.5" width="70" height="17" rx="8.5"/><text class="eft-tag-text" x="215" y="485.8" textLength="60" lengthAdjust="spacingAndGlyphs">Under munnen</text></g>
+        <g class="eft-punkt" data-punkt="nyckelben"><rect class="eft-tag" x="207" y="508.5" width="52" height="17" rx="8.5"/><text class="eft-tag-text" x="212" y="520.8" textLength="42" lengthAdjust="spacingAndGlyphs">Nyckelben</text></g>
+        <g class="eft-punkt" data-punkt="arm"><rect class="eft-tag" x="226" y="597.5" width="53" height="17" rx="8.5"/><text class="eft-tag-text" x="231" y="609.8" textLength="43" lengthAdjust="spacingAndGlyphs">Under arm</text></g>
+        {% if include.guide %}
+        <circle class="eftg-dot" data-punkt="topp" cx="133" cy="370" r="8"/>
+        <circle class="eftg-dot" data-punkt="ogonbryn" cx="167" cy="419" r="8"/>
+        <circle class="eftg-dot" data-punkt="sida" cx="180" cy="427" r="8"/>
+        <circle class="eftg-dot" data-punkt="under-ogat" cx="174" cy="435" r="8"/>
+        <circle class="eftg-dot" data-punkt="nasa" cx="151" cy="453" r="8"/>
+        <circle class="eftg-dot" data-punkt="mun" cx="151" cy="473" r="8"/>
+        <circle class="eftg-dot" data-punkt="nyckelben" cx="152" cy="537" r="8"/>
+        <circle class="eftg-dot" data-punkt="arm" cx="210" cy="609" r="8"/>
+        {% endif %}
+      </svg>

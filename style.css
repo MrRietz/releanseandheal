@@ -1058,6 +1058,204 @@ main > ul {
   color: #7c5c3e;
 }
 
+/* EFT-guiden */
+.eftg {
+  max-width: 640px;
+  margin: 24px auto;
+  padding: 24px;
+  background: linear-gradient(145deg, #f1f5e9 0%, #dfeadb 100%);
+  border: 1px solid #c9dcc6;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(61, 113, 103, 0.15);
+  color: #2b4a44;
+  box-sizing: border-box;
+}
+.eftg [hidden] {
+  display: none !important;
+}
+.eftg h3 {
+  margin: 0 0 6px 0;
+  color: #3d7167;
+}
+.eftg p {
+  margin: 0 0 12px 0;
+}
+.eftg-kanslor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0 20px 0;
+}
+.eftg-chip {
+  padding: 10px 18px;
+  border: 1px solid #b7d0b5;
+  border-radius: 999px;
+  background: #fff;
+  color: #2b4a44;
+  font: inherit;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.eftg-chip:hover {
+  background: #f6faf2;
+}
+.eftg-chip[aria-pressed="true"] {
+  background: #3d7167;
+  border-color: #3d7167;
+  color: #fff;
+}
+.eftg-skala {
+  margin: 0 0 20px 0;
+}
+.eftg-skala label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.eftg-skala-rad {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.eftg-skala-rad input {
+  flex: 1;
+  accent-color: #3d7167;
+}
+.eftg-skala-rad output {
+  min-width: 2ch;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #3d7167;
+  text-align: center;
+}
+.eftg-skala-andar {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+.eftg .cta[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.eftg-status {
+  text-align: center;
+  font-weight: 600;
+  color: #3d7167;
+}
+.eftg-scen {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.eftg-svg {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  background: #f6f3e8;
+}
+.eftg .eft-punkt .eft-tag-text {
+  fill: #8fb0a6;
+  transition: fill 0.3s ease;
+}
+.eftg .eft-punkt.klar .eft-tag-text {
+  fill: #1f5b50;
+}
+.eftg .eft-punkt.aktiv .eft-tag {
+  fill: #3d7167;
+  stroke: #3d7167;
+}
+.eftg .eft-punkt.aktiv .eft-tag-text {
+  fill: #fff;
+}
+.eftg-dot {
+  fill: transparent;
+  stroke: none;
+  pointer-events: none;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.eftg-dot.klar {
+  fill: rgba(61, 113, 103, 0.45);
+  stroke: #3d7167;
+  stroke-width: 1.2;
+}
+.eftg-dot.aktiv {
+  fill: rgba(224, 148, 84, 0.4);
+  stroke: #d9803f;
+  stroke-width: 1.6;
+  pointer-events: all;
+  cursor: pointer;
+  animation: eftg-puls 1.6s ease-in-out infinite;
+}
+.eftg-dot.puls {
+  animation: eftg-tryck 0.3s ease-out;
+}
+@keyframes eftg-puls {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.35); }
+}
+@keyframes eftg-tryck {
+  0% { transform: scale(1.7); }
+  100% { transform: scale(1); }
+}
+.eftg-andning {
+  text-align: center;
+  margin-top: 10px;
+}
+.eftg-andning span {
+  display: inline-block;
+  padding: 6px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
+  animation: eftg-andas 8s ease-in-out infinite;
+}
+@keyframes eftg-andas {
+  0%, 100% { transform: scale(0.95); opacity: 0.7; }
+  50% { transform: scale(1.08); opacity: 1; }
+}
+.eftg-instruktion {
+  text-align: center;
+  margin: 12px 0 14px 0;
+}
+.eftg-knappar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.eftg-knacka {
+  min-width: 220px;
+  padding: 16px 28px;
+  font-size: 1.2rem;
+}
+.eftg-lank {
+  border: none;
+  background: none;
+  color: #3d7167;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.eftg-resultat {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #b7d0b5;
+}
+.eftg-resultat-knappar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .eftg-dot.aktiv,
+  .eftg-dot.puls,
+  .eftg-andning span {
+    animation: none;
+  }
+}
+
 .trygghet {
   background: #fdf3e4;
   border-radius: 14px;

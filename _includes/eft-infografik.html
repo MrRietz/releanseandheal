@@ -21,26 +21,7 @@
   <div class="eft-info-main">
     <div class="eft-info-fig">
       <p class="eft-info-hand">{{ e.handskrift_figur }}</p>
-      <svg class="eft-info-svg" viewBox="14 352 270 310" role="img" aria-labelledby="eft-svg-titel">
-        <title id="eft-svg-titel">Knackpunkter för EFT</title>
-        <image href="{{ site.baseurl }}/public/img/eft-figur.jpg" x="14" y="352" width="270" height="310"/>
-        <rect class="eft-tag" x="189" y="354.5" width="72" height="17" rx="8.5"/>
-        <text class="eft-tag-text" x="194" y="366.8" textLength="62" lengthAdjust="spacingAndGlyphs">Topp av huvudet</text>
-        <rect class="eft-tag" x="209" y="387.5" width="49" height="17" rx="8.5"/>
-        <text class="eft-tag-text" x="214" y="399.8" textLength="39" lengthAdjust="spacingAndGlyphs">Ögonbryn</text>
-        <rect class="eft-tag" x="210" y="410.5" width="57" height="17" rx="8.5"/>
-        <text class="eft-tag-text" x="215" y="422.8" textLength="47" lengthAdjust="spacingAndGlyphs">Sida av ögat</text>
-        <rect class="eft-tag" x="210" y="431.5" width="52" height="17" rx="8.5"/>
-        <text class="eft-tag-text" x="215" y="443.8" textLength="42" lengthAdjust="spacingAndGlyphs">Under ögat</text>
-        <rect class="eft-tag" x="211" y="452.5" width="59" height="17" rx="8.5"/>
-        <text class="eft-tag-text" x="216" y="464.8" textLength="49" lengthAdjust="spacingAndGlyphs">Under näsan</text>
-        <rect class="eft-tag" x="210" y="473.5" width="70" height="17" rx="8.5"/>
-        <text class="eft-tag-text" x="215" y="485.8" textLength="60" lengthAdjust="spacingAndGlyphs">Under munnen</text>
-        <rect class="eft-tag" x="207" y="508.5" width="52" height="17" rx="8.5"/>
-        <text class="eft-tag-text" x="212" y="520.8" textLength="42" lengthAdjust="spacingAndGlyphs">Nyckelben</text>
-        <rect class="eft-tag" x="226" y="597.5" width="53" height="17" rx="8.5"/>
-        <text class="eft-tag-text" x="231" y="609.8" textLength="43" lengthAdjust="spacingAndGlyphs">Under arm</text>
-      </svg>
+      {% include eft-figur-svg.html %}
     </div>
     <aside class="eft-info-steps">
       <h5>{{ e.steg_rubrik }}</h5>

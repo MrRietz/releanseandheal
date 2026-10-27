@@ -1,0 +1,32 @@
+# Texterna i EFT-guiden (sidan /eft-guide/).
+# {kansla}, {antal}, {fore} och {efter} fylls i automatiskt. Låt dem stå kvar.
+start_rubrik: Hur känns det just nu?
+start_text: Välj det som passar bäst och skatta hur starkt det känns.
+kanslor:
+  - Stress
+  - Oro
+  - Trötthet
+  - Tungt i hjärtat
+  - Irritation
+  - Något annat
+skala_fraga: Hur starkt känns det, från 0 till 10?
+skala_lag: Inte alls
+skala_hog: Mycket starkt
+start_knapp: Börja
+
+knack_status: "Punkt {nr} av {totalt}: {namn}"
+knack_instruktion: Tänk på känslan ”{kansla}” medan du knackar lätt på den markerade punkten, ungefär {antal} gånger. Andas lugnt.
+knack_knapp: Knacka
+knack_nasta: Hoppa till nästa punkt
+andas: Andas in … och ut …
+
+klar_rubrik: Hur känns det nu?
+klar_fraga: Hur starkt känns det nu, från 0 till 10?
+klar_knapp: Se hur det gick
+resultat_lagre: Det gick från {fore} till {efter}. Många upplever att känslan släpper lite när de stannar upp och knackar. Du kan göra en runda till om du vill.
+resultat_samma: Det är helt okej. Känslor behöver ibland mer än en runda. Prova en till, eller berätta för mig vad som är jobbigt, så hittar vi ett sätt som passar dig.
+resultat_hogre: Det kan kännas så ibland, särskilt om något stort kommer upp. Var snäll mot dig själv. Du kan ta en paus, prova en runda till eller höra av dig till mig.
+ny_runda: Gör en runda till
+cta_text: Vill du fördjupa? Boka ett gratis utforskande samtal på 30 minuter.
+cta_knapp: Boka utforskande samtal
+friskrivning: Övningen är ett komplement och ersätter inte läkarvård eller psykiatrisk behandling. Upplevelser och resultat är individuella, och det vetenskapliga stödet varierar mellan metoderna.

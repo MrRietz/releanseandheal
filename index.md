@@ -31,6 +31,13 @@ Betalning sker innan behandling via swish eller bankkonto och du får uppgiftern
 
 </div>
 
+## Prova själv
+
+Nyfiken på EFT? Prova en guidad övning på två minuter, helt utan att logga in.
+
+[Prova EFT-guiden]({{ site.baseurl }}/eft-guide/){: .cta}
+{: .centrerad}
+
 ## Så går det till
 
 {% include sa-gar-det-till.html %}
