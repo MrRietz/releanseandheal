@@ -136,7 +136,57 @@ page_id: methods
     <p>EFT Tapping (Emotional Freedom Technique) är en psykologisk akupressurmetod där du knackar lätt med fingertopparna på olika meridianpunkter på kroppen samtidigt som du fokuserar på en känsla eller ett problem.</p>
     <details class="lasmer">
       <summary>Läs mer<span class="visually-hidden"> om EFT</span></summary>
-      <a href="{{ site.baseurl }}/public/img/eft-tapping-stor.jpg" target="_blank" rel="noopener" title="Klicka för att förstora"><img class="metod-bild" src="{{ site.baseurl }}/public/img/eft-tapping.jpg" alt="EFT Tapping: illustration av knackpunkterna i ansikte och på kroppen" width="502" height="753" loading="lazy"></a>
+      <figure class="eft-info">
+        <div class="eft-info-head">
+          <p class="eft-info-title"><span class="eft-info-eft">EFT</span> <span class="eft-info-sub">(Emotional Freedom Technique)</span> <span class="eft-info-script">– Tapping</span></p>
+          <p class="eft-info-lead">Välkommen att prova på och upplev ett inre skifte.</p>
+        </div>
+        <div class="eft-info-cols">
+          <section>
+            <h5>Vad är EFT?</h5>
+            <p>EFT är en enkel och effektiv metod som kombinerar lätt knackning på specifika punkter på kroppen med att du fokuserar på det som känns jobbigt. Genom att stimulera energisystemet i kroppen kan EFT hjälpa dig att minska stress, lugna ner känslor och skapa mer balans och välbefinnande.</p>
+          </section>
+          <section>
+            <h5>Hur fungerar det?</h5>
+            <p>När vi upplever stress, oro eller obehag hamnar kroppen i ett slags larmtillstånd. Genom att knacka på vissa punkter (akupressurpunkter) samtidigt som vi fokuserar på det vi vill förändra, kan vi hjälpa kroppen att slappna av och återgå till sitt naturliga lugn.</p>
+          </section>
+        </div>
+        <div class="eft-info-main">
+          <div class="eft-info-fig">
+            <p class="eft-info-hand">En liten knack – kan göra stor skillnad!</p>
+          <svg class="eft-info-svg" viewBox="14 352 270 310" role="img" aria-labelledby="eft-svg-titel">
+          <title id="eft-svg-titel">Knackpunkter för EFT</title>
+          <image href="{{ site.baseurl }}/public/img/eft-figur.jpg" x="14" y="352" width="270" height="310"/>
+          <rect class="eft-tag" x="189" y="354.5" width="72" height="17" rx="8.5"/>
+          <text class="eft-tag-text" x="194" y="366.8" textLength="62" lengthAdjust="spacingAndGlyphs">Topp av huvudet</text>
+          <rect class="eft-tag" x="209" y="387.5" width="49" height="17" rx="8.5"/>
+          <text class="eft-tag-text" x="214" y="399.8" textLength="39" lengthAdjust="spacingAndGlyphs">Ögonbryn</text>
+          <rect class="eft-tag" x="210" y="410.5" width="57" height="17" rx="8.5"/>
+          <text class="eft-tag-text" x="215" y="422.8" textLength="47" lengthAdjust="spacingAndGlyphs">Sida av ögat</text>
+          <rect class="eft-tag" x="210" y="431.5" width="52" height="17" rx="8.5"/>
+          <text class="eft-tag-text" x="215" y="443.8" textLength="42" lengthAdjust="spacingAndGlyphs">Under ögat</text>
+          <rect class="eft-tag" x="211" y="452.5" width="59" height="17" rx="8.5"/>
+          <text class="eft-tag-text" x="216" y="464.8" textLength="49" lengthAdjust="spacingAndGlyphs">Under näsan</text>
+          <rect class="eft-tag" x="210" y="473.5" width="70" height="17" rx="8.5"/>
+          <text class="eft-tag-text" x="215" y="485.8" textLength="60" lengthAdjust="spacingAndGlyphs">Under munnen</text>
+          <rect class="eft-tag" x="207" y="508.5" width="52" height="17" rx="8.5"/>
+          <text class="eft-tag-text" x="212" y="520.8" textLength="42" lengthAdjust="spacingAndGlyphs">Nyckelben</text>
+          <rect class="eft-tag" x="226" y="597.5" width="53" height="17" rx="8.5"/>
+          <text class="eft-tag-text" x="231" y="609.8" textLength="43" lengthAdjust="spacingAndGlyphs">Under arm</text>
+          </svg>
+          </div>
+          <aside class="eft-info-steps">
+            <h5>Så här gör du:</h5>
+            <ul>
+              <li>Använd pek- och långfinger för att knacka med.</li>
+              <li>Knacka med en eller båda händernas fingrar.</li>
+              <li>Knacka på varje punkt 10–15 gånger.</li>
+            </ul>
+            <p class="eft-info-hand">Det är enkelt, skonsamt och du kan göra det själv!</p>
+          </aside>
+        </div>
+        <p class="eft-info-foot">♡ Mindfulla verktyg · Mindre stress · Mer lugn · Ökat välbefinnande</p>
+      </figure>
       <p>EFT Tapping (Emotional Freedom Technique) är en psykologisk akupressurmetod som kombinerar element från traditionell kinesisk medicin och modern psykologi. Du knackar lätt med fingertopparna på olika meridianpunkter på kroppen samtidigt som du har mental fokus på en särskild negativ känsla eller problem. Det kan vara allt ifrån stress och ångest till fysisk smärta eller negativa tankemönster.</p>
       <p>Syftet är att återställa kroppens energibalans och minska eller eliminera obehagliga känslor. Metoden är enkel och kan utföras nästan var som helst och när som helst, och det krävs inga verktyg eller särskilda förberedelser. Det är en effektiv metod som många människor använder och det har blivit ett populärt verktyg inom stresshantering och personlig utveckling.</p>
     </details>
@@ -150,27 +200,3 @@ page_id: methods
   Osäker på vad som passar dig? Boka ett gratis utforskande samtal på 30 minuter.<br><br>
   <a href="{{ site.baseurl }}/bokning/?tjanst=utforskande-samtal" class="cta">Boka utforskande samtal</a>
 </p>
-
-<script>
-(function () {
-  var link = document.querySelector('.metod-bred a[href$="eft-tapping-stor.jpg"]');
-  if (!link || !window.HTMLDialogElement) return;
-  var thumb = link.querySelector('img');
-  var dlg = document.createElement('dialog');
-  dlg.className = 'bildvisare';
-  dlg.setAttribute('aria-label', 'EFT Tapping, förstorad bild');
-  var close = document.createElement('button');
-  close.type = 'button';
-  close.className = 'bildvisare-stang';
-  close.setAttribute('aria-label', 'Stäng');
-  close.textContent = '×';
-  var big = document.createElement('img');
-  big.src = link.href;
-  big.alt = thumb.alt;
-  dlg.appendChild(close);
-  dlg.appendChild(big);
-  document.body.appendChild(dlg);
-  link.addEventListener('click', function (e) { e.preventDefault(); dlg.showModal(); });
-  dlg.addEventListener('click', function () { dlg.close(); });
-})();
-</script>
